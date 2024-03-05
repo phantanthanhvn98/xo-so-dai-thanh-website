@@ -1,11 +1,13 @@
 import React from 'react';
+import Layout from '@/components/layout/layout';
+import XoSoMien from '@/components/result/xosomien/xosomien';
 
-const Route1Page = () => {
+const XoSoMienNamPage = () => {
   return (
-    <div>
-      <h1>Route1 Page</h1>
-    </div>
+    <Layout>
+        <XoSoMien />
+    </Layout>
   );
 };
 
-export default Route1Page;
+export default XoSoMienNamPage;

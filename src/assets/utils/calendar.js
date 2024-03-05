@@ -207,7 +207,7 @@ export const calendar = {
                     ten: "Quảng Ngãi"
                 },
                 {
-                    ten: "Đác Nông"
+                    ten: "Đắk Nông"
                 }
             ]
         },
