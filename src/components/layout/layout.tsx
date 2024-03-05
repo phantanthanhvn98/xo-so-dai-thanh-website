@@ -6,10 +6,10 @@ export default function Layout ({children}: any) {
     return (
       <div>
         <Header />
-        <main className="flex w-full p-8">
+        <main className="flex w-full p-8 max-[400px]:p-4">
           <div className="flex w-full justify-center">
-            <div className="grid grid-cols-3 gap-4">
-              <div className="col-span-2 max-md:col-span-3">
+            <div className="grid grid-cols-3 gap-4 max-[400px]:flex w-full">
+              <div className="col-span-2 max-md:col-span-3 flex w-full flex-col">
                 {children}
               </div>
               <div className="col-span-1 max-md:hidden">

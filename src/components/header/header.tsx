@@ -50,17 +50,17 @@ const Header = () => {
 
     return (
         <header className="flex max-[1050px]:flex-col w-full items-center justify-between">
-            <div className="flex max-[1050px]:w-full justify-between pl-8 pr-8 pt-4 pb-4">
-                <div className="min-[1050px]:hidden">
-                    <img className="" src={calendarLogo.src} alt="kết quả xổ số hôm nay"/>
+            <div className="flex max-[1050px]:w-full justify-between pl-8 pr-8 pt-4 pb-4 max-[400px]:pl-4 max-[400px]:pr-4">
+                <div className=" flex items-center min-[1050px]:hidden">
+                    <img className="max-[400px]:w-5 max-[400px]:h-5" src={calendarLogo.src} alt="kết quả xổ số hôm nay"/>
                 </div>
                 <Link href={"/"} prefetch={false}>
                     <div className="flex gap-8 items-center">
-                        <img className="w-24 h-12" src={logo.src} alt="xổ số hôm nay xổ số miền bắc xổ số miền nam xổ số miền trunvg"/>
+                        <img className="w-24 max-[400px]:w-16 h-12 max-[400px]:h-9" src={logo.src} alt="xổ số hôm nay xổ số miền bắc xổ số miền nam xổ số miền trunvg"/>
                     </div>
                 </Link>
                 <div className="flex items-center">
-                    <div className="min-[1050px]:hidden flex items-center justify-center border-[#c80505] border-[1px] pt-2.5 pb-2.5 pl-4 pr-4 rounded-[2rem] text-[14px] text-[#f04d3e] font-[500] cursor-pointer">
+                    <div className="min-[1050px]:hidden flex items-center justify-center border-[#c80505] border-[1px] pt-2.5 pb-2.5 pl-4 pr-4 rounded-[2rem] text-[14px] max-[400px]:text-[10px] text-[#f04d3e] font-[500] cursor-pointer">
                         Đăng Nhập
                     </div>
                 </div>  
@@ -71,7 +71,7 @@ const Header = () => {
                         headers.map((item: any, index: number) => {
                             return (
                                 <Link href={item.uri} key={index} prefetch={false}>
-                                    <div className="flex min-w-[105px] items-center justify-center max-md:p-0 pl-2 pr-2 text-[16px] font-[500]">
+                                    <div className="flex max-[1050px]:min-w-[105px] items-center justify-center max-md:p-0 pl-2 pr-2 text-[16px] font-[500]">
                                         {item.name}
                                     </div>
                                 </Link>
@@ -80,7 +80,7 @@ const Header = () => {
                     }
                 </div>
             </div>
-            <div className="max-[1050px]:hidden flex items-center">
+            <div className="max-[1050px]:hidden w-[150px] flex items-center">
                 <div className="flex items-center justify-center border-[#c80505] border-[1px] pt-2.5 pb-2.5 pl-4 pr-4 rounded-[2rem] text-[14px] text-[#f04d3e] font-[500] cursor-pointer">
                     Đăng Nhập
                 </div>

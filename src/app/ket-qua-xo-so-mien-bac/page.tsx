@@ -5,9 +5,12 @@ import React from 'react';
 const XoSoMienBacPage = () => {
   return (
     <Layout>
-      <XoSoMienBac />
-      <XoSoMienBac />
-      <XoSoMienBac />
+      <div className='flex flex-col gap-4'>
+        <XoSoMienBac />
+        <XoSoMienBac />
+        <XoSoMienBac />
+      </div>
+
   </Layout>
   );
 };
