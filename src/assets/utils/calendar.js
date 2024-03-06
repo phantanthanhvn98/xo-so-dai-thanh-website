@@ -268,3 +268,85 @@ export const calendar = {
 
     }
 }
+
+export const vietlottCalendar = {
+    thu2: {
+        vi: "Thứ 2",
+        vietlott:{
+            tinh: [
+                {
+                    ten: "Mega 6/45"
+                }, 
+                {
+                    ten: "Max 3D"
+                }
+            ]
+        }
+    },
+    thu3: {
+        vi: "Thứ 3",
+        vietlott:{
+            tinh: [
+                {
+                    ten: "Power 5/66"
+                }
+            ]
+        }
+    },
+    thu4: {
+        vi: "Thứ 4",
+        vietlott:{
+            tinh: [
+                {
+                    ten: "Mega 6/45"
+                }, 
+                {
+                    ten: "Max 3D"
+                }
+            ]
+        }
+    },
+    thu5: {
+        vi: "Thứ 5",
+        vietlott:{
+            tinh: [
+                {
+                    ten: "Power 5/66"
+                }
+            ]
+        }
+    },
+    thu6: {
+        vi: "Thứ 6",
+        vietlott:{
+            tinh: [
+                {
+                    ten: "Mega 6/45"
+                }, 
+                {
+                    ten: "Max 3D"
+                }
+            ]
+        }
+    },
+    thu7: {
+        vi: "Thứ 7",
+        vietlott:{
+            tinh: [
+                {
+                    ten: "Power 5/66"
+                }
+            ]
+        }
+    },
+    cn: {
+        vi: "Chủ nhật",
+        vietlott:{
+            tinh: [
+                {
+                    ten: "Mega 6/45"
+                }
+            ]
+        }
+    },
+}

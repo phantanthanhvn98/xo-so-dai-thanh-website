@@ -7,8 +7,8 @@ export default function Layout ({children}: any) {
       <div>
         <Header />
         <main className="flex w-full p-8 max-[400px]:p-4">
-          <div className="flex w-full justify-center">
-            <div className="grid grid-cols-3 gap-4 max-[400px]:flex w-full">
+          <div className="flex max-w-[1200px] justify-center mx-auto">
+            <div className="self-center grid grid-cols-3 gap-4 max-[400px]:flex w-full">
               <div className="col-span-2 max-md:col-span-3 flex w-full flex-col">
                 {children}
               </div>
