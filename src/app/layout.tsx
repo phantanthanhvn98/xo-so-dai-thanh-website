@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import "./globals.css";
 import { StoreProvider } from "@/components/login/store/StoreProvider";
 
@@ -20,6 +23,7 @@ export default function RootLayout({
       <html lang="vi">
         <body className={lexend.className}>
           {children}
+          <ToastContainer theme="dark"/>
         </body>
       </html>
     </StoreProvider>

@@ -4,7 +4,7 @@ import Layout from '@/components/layout/layout'
 import { parseDayofWeek } from '@/components/utils/utils'
 import { format } from 'date-fns'
 import { enUS } from 'date-fns/locale'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import XoSoMienBacInput from "@/components/inputs/xosomienbac/xosomienbacinput"
 import XoSoMienInput from "@/components/inputs/xosomien/xosomieninput"
@@ -43,7 +43,7 @@ const Admin = () => {
                     tab === 0 ?
                     <XoSoMienInput ketqua={
                         dataRule.nam.tinh.map((item) => {
-                            const template = {...templatkqxsmiennam}
+                            const template = JSON.parse(JSON.stringify(templatkqxsmiennam));
                             template["Tinh"] = item.ten
                             template["Vung"] = dataRule.nam.vi
                             template["Thu"] = getDayOfWeekVN(new Date())
@@ -57,13 +57,13 @@ const Admin = () => {
                     tab === 1 ?
                     <XoSoMienInput ketqua={
                         dataRule.trung.tinh.map((item) => {
-                            const template = {...templatkqxsmiennam}
+                            const template = JSON.parse(JSON.stringify(templatkqxsmiennam));
                             template["Tinh"] = item.ten
-                            template["Vung"] = dataRule.nam.vi
+                            template["Vung"] = dataRule.trung.vi
                             template["Thu"] = getDayOfWeekVN(new Date())
                             template["Ngay"] = formatDateToDDMMYYYY(new Date())
                             return template
-                        })} 
+                        }).sort((a, b) => a.Tinh.localeCompare(b.Tinh))} 
                     />
                     :<></>
                 }
@@ -72,7 +72,7 @@ const Admin = () => {
                     <div>
                         {
                         dataRule.bac.tinh.map((item, index) => {
-                            const template = {...templatkqxsmienbac}
+                            const template = JSON.parse(JSON.stringify(templatkqxsmienbac));
                             template["Tinh"] = item.ten
                             template["Vung"] = dataRule.bac.vi
                             template["Thu"] = getDayOfWeekVN(new Date())

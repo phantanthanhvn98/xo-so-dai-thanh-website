@@ -2,12 +2,11 @@ import Layout from "@/components/layout/layout";
 import axios from "axios";
 import { format } from "date-fns";
 import { enUS, vi } from "date-fns/locale";
+
 import { serviceUrl } from "../assets/utils/constants"
 import { parseDayofWeek } from "../components/utils/utils"
 import { calendar } from "../assets/utils/calendar"
-import Calendar from "../components/calendar/calendar"
 import XoSoMienBac from "../components/result/xosomienbac/xosomienbac"
-import XoSoMienNamTinh from "../components/result/xosomiennam/xosomiennamtinh"
 import XoSoMien from "../components/result/xosomien/xosomien"
 
 export default async function Home() {

@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify'
 import { API } from '../api'
 export class Content {
     constructor(){
@@ -9,8 +10,10 @@ export class Content {
 
     }
 
-    getKetQuaMien (date){
-
+    getKetQuaMien(vung, date){
+        return this.api.call(
+            `ketquaxoso/${vung}/${date}`,
+        )
     }
 
     getKetQuaTinh (date){
@@ -28,10 +31,16 @@ export class Content {
     /////////////////////////// SETTER //////////////////////////
 
     insert(data){
-        return this.api.call(
+        const ketqua =  this.api.call(
             'ketquaxoso',
             "post",
             data
         )
+        ketqua.then((item) => {
+            toast("Cập nhất dữ liệu thành công")
+        }).catch(function (error) {
+            toast(`${error.toJSON()}`)
+          });
+        return ketqua
     }
 } 
