@@ -2,9 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import Image from 'next/image'
-import { useAppSelector } from "@/components/login/store";
-import { setAuthState } from "@/components/login/store/authSlice";
-import { useAppDispatch } from "@/components/login/store";
+import {
+    login,
+    selectUserName,
+    selectPassword,
+    selectRole,
+    selectIsOn,
+  } from "@/components/login/store/lib/counterSlice";
+  
+import { useAppDispatch, useAppSelector } from "@/components/login/store/lib/hooks";
+
 import {Security} from '@/components/api/security/security'
 import closeIcon from "../../assets/images/close.svg"
 import "./toggle.css"
@@ -15,8 +22,12 @@ const Login = (props) => {
     const [password, setPassword] = useState("")
     const [remember, setRemember] = useState(false)
     const security = new Security() 
-    const authState = useAppSelector((state) => state.auth.authState)
+
     const dispatch = useAppDispatch();
+    // const username = useAppSelector(selectUserName);
+    // const password_ = useAppSelector(selectPassword);
+    // const role = useAppSelector(selectRole);
+    // const isOn = useAppSelector(selectIsOn)
 
     useEffect(() => {
         if(props.open){
@@ -52,9 +63,12 @@ const Login = (props) => {
                     localStorage.setItem("PASSWORD", password)
                     localStorage.setItem("ROLE", item.data.role)
                     handleSetData(
-                        item.data.username,
-                        item.data.password,
-                        item.data.role
+                        {
+                            username: item.data.username,
+                            password: item.data.password,
+                            role: item.data.role, 
+                            isOn: true
+                        }
                     )
                 }
                 props.setOpen(false)
@@ -74,8 +88,8 @@ const Login = (props) => {
         const toggel = document.getElementById("remember-password").checked
         setRemember(toggel)
     }
-    const handleSetData = () => {
-        dispatch(setAuthState(true))
+    const handleSetData = (data) => {
+        dispatch(dispatch(login(data)))
     };
     return (
         <div className={`flex relative w-full ${props.open ? "opacity-100 visible" : "invisible opacity-0"} transition-all ease-in duration-100`}>
