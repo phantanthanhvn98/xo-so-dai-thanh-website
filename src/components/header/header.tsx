@@ -1,10 +1,13 @@
-import React from "react"
-import { format } from 'date-fns';
-import {vi} from 'date-fns/locale'
+'use client'
+import React, { useState } from "react"
 import Link from "next/link";
+import Image from 'next/image'
+import { Provider } from "react-redux";
+import { store } from '@/components/login/store'
 
 import logo from "../../assets/images/logo.png"
 import calendarLogo from "../../assets/images/calendar.svg"
+import Login from "../../components/login/login"
 
 const headers = [
     {
@@ -41,49 +44,50 @@ const headers = [
     },
 ]
 
-const Header = () => {
-    const today = new Date();
-
-    const formattedDate = format(today, 'dd/MM/yyyy', { locale: vi});
-
-    const dayOfWeek = format(today, 'EEEE', { locale: vi});
-
+const Header = (props:any) => {
+    const[open, setOpen] = useState(false)
+    const login = props.login
     return (
-        <header className="flex max-[1090px]:flex-col w-full items-center justify-between">
-            <div className="flex max-[1090px]:w-full justify-between pl-8 pr-8 pt-4 pb-4 max-[400px]:pl-4 max-[400px]:pr-4">
-                <div className=" flex items-center min-[1090px]:hidden">
-                    <img className="max-[400px]:w-5 max-[400px]:h-5" src={calendarLogo.src} alt="kết quả xổ số hôm nay"/>
-                </div>
-                <Link href={"/"} prefetch={false}>
-                    <div className="flex gap-8 items-center">
-                        <img className="w-24 max-[400px]:w-16 h-12 max-[400px]:h-9" src={logo.src} alt="xổ số hôm nay xổ số miền bắc xổ số miền nam xổ số miền trunvg"/>
+        <Provider store={store}>
+            <header className="flex flex-col w-full items-center justify-between">
+                <div className="flex max-[1090px]:flex-col w-full items-center justify-between">
+                    <div className="flex max-[1090px]:w-full justify-between pl-8 pr-8 pt-4 pb-4 max-[400px]:pl-4 max-[400px]:pr-4">
+                        <div className=" flex items-center min-[1090px]:hidden">
+                            <Image className="max-[400px]:w-5 max-[400px]:h-5" src={calendarLogo} alt="kết quả xổ số hôm nay"/>
+                        </div>
+                        <Link href={"/"} prefetch={false}>
+                            <div className="flex gap-8 items-center">
+                                <Image className="w-24 max-[400px]:w-16 h-12 max-[400px]:h-9" src={logo} alt="xổ số hôm nay xổ số miền bắc xổ số miền nam xổ số miền trunvg"/>
+                            </div>
+                        </Link>
+                        <div className="flex items-center" onClick={() => setOpen(!open)}>
+                            <div className={`${login ? "" : "hidden"} min-[1090px]:hidden flex items-center justify-center border-[#c80505] border-[1px] pt-2.5 pb-2.5 pl-4 pr-4 rounded-[2rem] text-[14px] max-[400px]:text-[10px] text-[#f04d3e] font-[500] cursor-pointer`}>
+                                Đăng Nhập
+                            </div>
+                        </div>  
                     </div>
-                </Link>
-                <div className="flex items-center">
-                    <div className="min-[1090px]:hidden flex items-center justify-center border-[#c80505] border-[1px] pt-2.5 pb-2.5 pl-4 pr-4 rounded-[2rem] text-[14px] max-[400px]:text-[10px] text-[#f04d3e] font-[500] cursor-pointer">
-                        Đăng Nhập
+                    <div className="flex max-[1090px]:w-full justify-between text-center overflow-x-scroll no-scrollbar text-[#fff] bg-[#ec222c] pt-3 pb-3 pl-4 pr-4 rounded-[2rem] max-[1090px]:pl-2 max-[1090px]:pr-2 max-[1090px]:rounded-none">
+                        {
+                            headers.map((item: any, index: number) => {
+                                return (
+                                    <Link href={item.uri} key={index} prefetch={false}>
+                                        <div className="flex max-[1090px]:min-w-[105px] items-center justify-center max-md:p-0 pl-2 pr-2 text-[16px] font-[500]">
+                                            {item.name}
+                                        </div>
+                                    </Link>
+                                )
+                            })
+                        }
                     </div>
-                </div>  
-            </div>
-            <div className="flex max-[1090px]:w-full justify-between text-center overflow-x-scroll no-scrollbar text-[#fff] bg-[#ec222c] pt-3 pb-3 pl-4 pr-4 rounded-[2rem] max-[1090px]:pl-2 max-[1090px]:pr-2 max-[1090px]:rounded-none">
-                {
-                    headers.map((item: any, index: number) => {
-                        return (
-                            <Link href={item.uri} key={index} prefetch={false}>
-                                <div className="flex max-[1090px]:min-w-[105px] items-center justify-center max-md:p-0 pl-2 pr-2 text-[16px] font-[500]">
-                                    {item.name}
-                                </div>
-                            </Link>
-                        )
-                    })
-                }
-            </div>
-            <div className="max-[1090px]:hidden w-[150px] flex items-center">
-                <div className="flex items-center justify-center border-[#c80505] border-[1px] pt-2.5 pb-2.5 pl-4 pr-4 rounded-[2rem] text-[14px] text-[#f04d3e] font-[500] cursor-pointer">
-                    Đăng Nhập
+                    <div className="max-[1090px]:hidden w-[150px] flex items-center cursor-pointer" onClick={() => setOpen(!open)}>
+                        <div className={`${login ? "" : "hidden"} flex items-center justify-center border-[#c80505] border-[1px] pt-2.5 pb-2.5 pl-4 pr-4 rounded-[2rem] text-[14px] text-[#f04d3e] font-[500] cursor-pointer`}>
+                            Đăng Nhập
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </header>
+                <Login open={open} setOpen={setOpen}/>
+            </header>
+        </Provider>
     )
 }
 

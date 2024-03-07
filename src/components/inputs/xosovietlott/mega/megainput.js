@@ -7,7 +7,7 @@ const MegaInput = (props) => {
             <div className='bg-[#fff]'>
                 <div className='bg-[#f1bd2166]'>
                     <div className='flex items-center justify-center text-[20px] max-[500px]:text-[16px] text-[#ec222c] font-[500]'>
-                        {`Xổ Số ${ketqua.Tinh} Ngày ${ketqua.ngay}`}
+                        {`Xổ Số ${ketqua.Tinh} Ngày ${ketqua.Ngay}`}
                     </div>
                     <div className='flex items-center justify-center text[16px] max-[500px]:text-[14px] text-[#0073ea] font-[300]'>
                         {`XS ${ketqua.Vung} / XS ${ketqua.Tinh} ${ketqua.Thu}/ XS ${ketqua.Tinh} ${ketqua.Ngay}`}

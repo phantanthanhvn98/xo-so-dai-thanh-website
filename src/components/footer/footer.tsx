@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 import logo from "../../assets/images/logo.png"
 
@@ -6,7 +7,7 @@ const Footer = () => {
     return (
         <div className='flex justify-between bg-[#cae5ff66] p-8 max-[400px]:p-4 max-[500px]:flex-col max-[500px]:gap-4'>
             <div className='flex justify-center'>
-                <img className='w-[103px] h-[60px]' src={logo.src} alt=""/>
+                <Image className='w-[103px] h-[60px]' src={logo} alt=""/>
             </div>
             <div className='flex justify-between gap-10 '>
                 <div className='flex flex-col gap-3'>

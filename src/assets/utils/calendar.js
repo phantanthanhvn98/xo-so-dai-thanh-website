@@ -288,7 +288,7 @@ export const vietlottCalendar = {
         vietlott:{
             tinh: [
                 {
-                    ten: "Power 5/66"
+                    ten: "Power 6/55"
                 }
             ]
         }
@@ -311,7 +311,7 @@ export const vietlottCalendar = {
         vietlott:{
             tinh: [
                 {
-                    ten: "Power 5/66"
+                    ten: "Power 6/55"
                 }
             ]
         }
@@ -334,7 +334,7 @@ export const vietlottCalendar = {
         vietlott:{
             tinh: [
                 {
-                    ten: "Power 5/66"
+                    ten: "Power 6/55"
                 }
             ]
         }

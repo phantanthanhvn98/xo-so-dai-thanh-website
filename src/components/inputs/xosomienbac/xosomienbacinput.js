@@ -22,7 +22,7 @@ const XoSoMienBacInput = (props) => {
                         ketqua.KetQua["Giải đặc biệt"][0]
                     }
                 </div> */}
-                <input  type='text' defaultValue={ketqua.KetQua["Giải đặc biệt"][0]} className='text-center flex focus:outline-none w-full items-center justify-center text-[32px] text-[#ec222c] font-[500] border-l-[1px] border-r-[1px] border-b-[#0000001a]'/>
+                <input type='text' defaultValue={ketqua.KetQua["Giải đặc biệt"][0]} className='text-center flex focus:outline-none w-full items-center justify-center text-[32px] text-[#ec222c] font-[500] border-l-[1px] border-r-[1px] border-b-[#0000001a]'/>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a] bg-[#e7f5f2]'>
                 <div className='flex w-10 items-center justify-center text-[16px] text-[#000] font-[300] border-l-[1px] border-b-[#0000001a]'>

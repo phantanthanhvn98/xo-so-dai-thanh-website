@@ -4,7 +4,7 @@ const Max3dInput = (props) => {
     const ketqua = props.ketqua[0]
     return (
         <div className="">
-            <div className="bg-[#fff">
+            <div className="bg-[#fff]">
                 <div className='bg-[#f1bd2166]'>
                     <div className='flex items-center justify-center text-center text-[20px] max-[500px]:text[16px] text-[#ec222c] font-[500]'>
                         Xổ số Max 3D - Kết quả XS Max 3D Vietlott
@@ -24,7 +24,7 @@ const Max3dInput = (props) => {
                                     // <div className='flex items-center justify-center' key={index}>
                                     //     {item}
                                     // </div>
-                                    <input defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] '/>
+                                    <input defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6]' key={index}/>
                                 )
                             })
                         }
@@ -41,7 +41,7 @@ const Max3dInput = (props) => {
                                     // <div className='flex items-center justify-center' key={index}>
                                     //     {item}
                                     // </div>
-                                    <input defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] bg-[#e7f5f2]'/>
+                                    <input defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] bg-[#e7f5f2]' key={index}/>
                                 )
                             })
                         }
@@ -58,7 +58,7 @@ const Max3dInput = (props) => {
                                     // <div className='flex items-center justify-center' key={index}>
                                     //     {item}
                                     // </div>
-                                    <input defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] '/>
+                                    <input defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] ' key={index}/>
                                 )
                             })
                         }
@@ -75,7 +75,7 @@ const Max3dInput = (props) => {
                                     // <div className='flex items-center justify-center' key={index}>
                                     //     {item}
                                     // </div>
-                                    <input defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] bg-[#e7f5f2]'/>
+                                    <input defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] bg-[#e7f5f2]' key={index}/>
                                 )
                             })
                         }
