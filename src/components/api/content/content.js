@@ -6,8 +6,10 @@ export class Content {
     }
 
     /////////////////////////// GETTER //////////////////////////
-    getKetQua (date){
-
+    getKetQuaNgay(date){
+        return this.api.call(
+            `ketquaxoso/${date}`,
+        )
     }
 
     getKetQuaMien(vung, date, page){
@@ -16,8 +18,10 @@ export class Content {
         )
     }
 
-    getKetQuaTinh (date){
-
+    getKetQuaTinh (vung, tinh, date, page){
+        return this.api.call(
+            `ketquaxoso/${vung}/${tinh}/${date}?page=${page}`,
+        )
     }
 
     getKetQuaVietlott (date){

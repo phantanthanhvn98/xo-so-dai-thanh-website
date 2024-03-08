@@ -1,63 +1,9 @@
 import React from 'react'
-
-const ketqua = {
-    "_id": {
-      "$oid": "65e042cfd4ea4048eee03bbc"
-    },
-    "Ngay": "03-01-2024",
-    "Tinh": "Bắc Ninh",
-    "Vung": "Miền Bắc",
-    "KetQua": {
-      "Giải bảy": [
-        "61",
-        "14",
-        "85",
-        "25"
-      ],
-      "Giải sáu": [
-        "920",
-        "945",
-        "848"
-      ],
-      "Giải năm": [
-        "1198",
-        "2132",
-        "6734",
-        "7342",
-        "0172",
-        "3018"
-      ],
-      "Giải tư": [
-        "7275",
-        "3934",
-        "7969",
-        "3310"
-      ],
-      "Giải ba": [
-        "81244",
-        "41936",
-        "65835",
-        "18119",
-        "78762",
-        "30466"
-      ],
-      "Giải nhì": [
-        "88825",
-        "25631"
-      ],
-      "Giải nhất": [
-        "61083"
-      ],
-      "Giải đặc biệt": [
-        "62495"
-      ]
-    },
-    "createdAt": {
-      "$date": "2024-01-02T17:00:00.000Z"
-    }
-  }
+import {getDayOfWeekVN, parseDateFromDDMMYYYY} from '@/components/utils/utils'
 
 const XoSoMienBac = (props) => {
+    const ketqua = props.ketqua[0]
+
     return (
         <div className='bg-[#fff]'>
             <div className='bg-[#f1bd2166]'>
@@ -65,7 +11,7 @@ const XoSoMienBac = (props) => {
                     KQXS Miền Bắc ( KQXS MB)
                 </div>
                 <div className='flex items-center justify-center text[16px] max-[400px]:text-[13px] text-[#0073ea] font-[300]'>
-                    XSMB / XSMB Thứ 4 / XSMB 28/02/2024
+                    {`XSMB / XSMB ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua.Ngay))} / XSMB ${ketqua.Ngay}`}
                 </div>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>

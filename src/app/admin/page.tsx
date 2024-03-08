@@ -56,6 +56,8 @@ const Admin = () => {
                             template["Ngay"] = formatDateToDDMMYYYY(dayNow)
                             return template
                         }).sort((a, b) => a.Tinh.localeCompare(b.Tinh))} 
+                        code="MN"
+                        vung="Miền Nam"
                     />
                     :<></>
                 }
@@ -70,6 +72,8 @@ const Admin = () => {
                             template["Ngay"] = formatDateToDDMMYYYY(dayNow)
                             return template
                         }).sort((a, b) => a.Tinh.localeCompare(b.Tinh))} 
+                        code="MT"
+                        vung="Miền Trung"
                     />
                     :<></>
                 }
@@ -93,7 +97,7 @@ const Admin = () => {
                     <XoSoVietlottInput ketqua={
                         vietlottRule.vietlott.tinh.map((item: any) => {
                             const template  =  (item.ten === "Max 3D") ? {...templatekqxsMax3D} : {...templatekqxsmega}
-                            template["Tinh"] = item.ten
+                            template["Tinh"] = item.ten.replace("/", '-')
                             template["Vung"] = "Vietlott"
                             template["Thu"] = getDayOfWeekVN(dayNow)
                             template["Ngay"] = formatDateToDDMMYYYY(dayNow)

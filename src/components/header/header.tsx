@@ -59,7 +59,9 @@ const Header = (props:any) => {
             <div className="flex max-[1090px]:flex-col w-full items-center justify-between">
                 <div className="flex max-[1090px]:w-full justify-between pl-8 pr-8 pt-4 pb-4 max-[400px]:pl-4 max-[400px]:pr-4">
                     <div className=" flex items-center min-[1090px]:hidden cursor-pointer">
-                        <Image className="max-[400px]:w-5 max-[400px]:h-5" src={calendarLogo} alt="kết quả xổ số hôm nay"/>
+                        <Link href={"/"} prefetch={false}>
+                            <Image className="max-[400px]:w-5 max-[400px]:h-5" src={calendarLogo} alt="kết quả xổ số hôm nay"/>
+                        </Link>
                     </div>
                     <Link href={"/"} prefetch={false}>
                         <div className="flex gap-8 items-center">

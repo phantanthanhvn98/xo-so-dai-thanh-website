@@ -1,29 +1,25 @@
 import Layout from "@/components/layout/layout";
-import axios from "axios";
 import { format } from "date-fns";
 import { enUS, vi } from "date-fns/locale";
+import { useAppSelector } from "@/components/login/store/lib/hooks";
+import { selectDay } from "@/components/login/store/lib/counterSlice";
 
 import { serviceUrl } from "../assets/utils/constants"
-import { parseDayofWeek } from "../components/utils/utils"
+import { parseDateFromDDMMYYYY, parseDayofWeek } from "../components/utils/utils"
 import { calendar } from "../assets/utils/calendar"
 import XoSoMienBac from "../components/result/xosomienbac/xosomienbac"
 import XoSoMien from "../components/result/xosomien/xosomien"
+import { Content } from "@/components/api/content/content";
 
 export default async function Home() {
-  const today = new Date();
-  const formattedDate = format(today, 'dd/MM/yyyy', { locale: vi});
-  const getData = async () => {
-    let config = {
-      method: 'get',
-      maxBodyLength: Infinity,
-      url: `${serviceUrl}/ketquaxoso/01-01-2024`,
-      headers: { }
-    };
-    return await axios.request(config)
-  }
-  const dataToday = (await getData())?.data
+  const contentService = new Content()
+  // const selectedDate= useAppSelector(selectDay)
+  // const dayNow = parseDateFromDDMMYYYY(selectedDate)
+  const dataDate = (await contentService.getKetQuaNgay('latest'))?.data
   const dayOfWeek = format(new Date(), 'EEEE', { locale: enUS})
   const dataRule = calendar[parseDayofWeek(dayOfWeek)]
+
+
   return (
     <Layout>
       <div className="flex flex-col gap-4">
@@ -73,10 +69,11 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        <XoSoMien props={""}/>
-        <XoSoMienBac />
-        <XoSoMien props={""}/>
+        <XoSoMien code="MN" vung={"Miền Nam"} ketqua={dataDate["Miền Nam"] as any}/>
+        <XoSoMienBac code="MB" vung={"Miền Bắc"} ketqua={dataDate["Miền Bắc"] as any} />
+        <XoSoMien code="MT" vung={"Miền Trung"} ketqua={dataDate["Miền Trung"] as any}/>
       </div>
     </Layout>
   );
 }
+

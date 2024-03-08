@@ -20,8 +20,8 @@ const vietlott  = [
 const XoSoVietlottInput = (props) => {
     const [tab, setTab] = useState(0)
     const ketqua = props.ketqua
-    const filterMega645 = ketqua.filter((item) => item.Tinh === "Mega 6/45")
-    const filterMega655 = ketqua.filter((item) => item.Tinh === "Power 6/55")
+    const filterMega645 = ketqua.filter((item) => item.Tinh === "Mega 6-45")
+    const filterMega655 = ketqua.filter((item) => item.Tinh === "Power 6-55")
     const filterMax3D= ketqua.filter((item) => item.Tinh === "Max 3D")
     return (
         <div className='text'>
@@ -42,17 +42,17 @@ const XoSoVietlottInput = (props) => {
                 </div>
                 {
                 tab === 0 && filterMega645.length > 0 ? 
-                <MegaInput ketqua={filterMega645}/>
+                <MegaInput ketqua={filterMega645[0]}/>
                 : <></>
                 }
                 {
                 tab === 1 && filterMega655.length > 0 ? 
-                <MegaInput ketqua={filterMega655}/>
+                <MegaInput ketqua={filterMega655[0]}/>
                 : <></>
                 }
                 {   
                     tab === 2 && filterMax3D.length > 0 ? 
-                    <Max3dInput ketqua={filterMax3D}/>
+                    <Max3dInput ketqua={filterMax3D[0]}/>
                     : <></>
                 }
             </div>

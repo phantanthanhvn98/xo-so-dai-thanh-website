@@ -47,7 +47,8 @@ export const templatkqxsmienbac =  {
       "Giải đặc biệt": [
         ""
       ]
-    }
+    },
+    "createdAt": new Date()
 }
 
 export const templatkqxsmiennam =     {
@@ -93,6 +94,7 @@ export const templatkqxsmiennam =     {
         ""
       ]
     },
+    "createdAt": new Date()
 }
 
 export const templatekqxsmega =     {
@@ -102,7 +104,8 @@ export const templatekqxsmega =     {
     "Vung": "",
     "KetQua": ["", "", "", "", "", ""],
     "Giatri": "",
-    "Kyquaythuong": ""
+    "Kyquaythuong": "",
+    "createdAt": new Date()
 }
 
 export const templatekqxsMax3D = {
@@ -111,17 +114,17 @@ export const templatekqxsMax3D = {
   "Tinh": "Max3D",
   "Vung": "Vietlott",
   "KetQua": {
-      "Giải tám": [
+      "Giải đặc biệt": [
           "",
           ""
           ],
-    "Giải bảy": [
+    "Giải nhất": [
       "",
       "",
       "",
       ""
     ],
-    "Giải sáu": [
+    "Giải nhì": [
       "",
       "",
       "",
@@ -129,7 +132,7 @@ export const templatekqxsMax3D = {
       "",
       ""
     ],
-    "Giải kk": [
+    "Giải ba": [
       "",
       "",
       "",
@@ -140,5 +143,6 @@ export const templatekqxsMax3D = {
       "",
     ],
     
-  }
+  },
+  "createdAt": new Date()
 }

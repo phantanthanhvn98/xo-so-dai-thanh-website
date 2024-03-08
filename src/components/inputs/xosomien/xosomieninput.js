@@ -7,11 +7,9 @@ import { getDayOfWeekVN, parseDateFromDDMMYYYY } from '@/components/utils/utils'
 
 const XoSoMienInput = (props) => {
     const [ketqua, setKetQua] = useState(props.ketqua)
-    // console.log("set new", ketqua, props.ketqua)
-    // const ketqua = props.ketqua
 
     const contentService = new Content()
-    // const selectedDate= useAppSelector(selectDay)
+
 
     useEffect(() => {
         getKetqua()
@@ -24,8 +22,8 @@ const XoSoMienInput = (props) => {
 
     const getKetqua = () => {
         contentService.getKetQuaMien(props.ketqua[0].Vung, props.ketqua[0].Ngay, 0).then((item) => {
-            const tinhs = item.data.map((item) => item.Tinh)
-            const newketqua = item.data.concat(props.ketqua.filter((item2) => !tinhs.includes(item2.Tinh))).sort((a, b) => a.Tinh.localeCompare(b.Tinh))
+            const tinhs = item.data[props.ketqua[0].Ngay].map((item) => item.Tinh)
+            const newketqua = item.data[props.ketqua[0].Ngay].concat(props.ketqua.filter((item2) => !tinhs.includes(item2.Tinh))).sort((a, b) => a.Tinh.localeCompare(b.Tinh))
             setKetQua(newketqua)
         })
     }
@@ -40,10 +38,10 @@ const XoSoMienInput = (props) => {
         <div className="bg-[#fff] w-full">
             <div className='bg-[#f1bd2166]'>
                 <div className='flex items-center justify-center text-[20px] max-md:text-[16px] text-[#ec222c] font-[500]'>
-                    {`KQXS Miền Nam ( KQXS MN)`}
+                    {`KQXS ${props.vung} ( KQXS ${props.code})`}
                 </div>
                 <div className='flex items-center justify-center text[16px] max-md:text-[13px] text-[#0073ea] font-[300]'>
-                    {`XSMN / XSMN ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua[0].Ngay))} / XSMB ${ketqua[0].Ngay}`}
+                    {`XS${props.code} / XS${props.code} ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua[0].Ngay))} / XS${props.code} ${ketqua[0].Ngay}`}
                 </div>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
