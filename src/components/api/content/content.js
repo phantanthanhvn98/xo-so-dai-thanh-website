@@ -10,9 +10,9 @@ export class Content {
 
     }
 
-    getKetQuaMien(vung, date){
+    getKetQuaMien(vung, date, page){
         return this.api.call(
-            `ketquaxoso/${vung}/${date}`,
+            `ketquaxoso/${vung}/${date}?page=${page}`,
         )
     }
 
@@ -37,7 +37,12 @@ export class Content {
             data
         )
         ketqua.then((item) => {
-            toast("Cập nhất dữ liệu thành công")
+            if(item.status === 200)
+                toast("Cập nhất dữ liệu thành công")
+            else if(item.status === 401)
+                toast("Không có quyền cập nhật dữ liệu")
+            else
+                toast("Liên hện admin để được hỗ trợ")
         }).catch(function (error) {
             toast(`${error.toJSON()}`)
           });

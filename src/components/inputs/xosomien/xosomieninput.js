@@ -1,19 +1,34 @@
 import React, { useEffect, useState } from "react";
 
 import { Content } from '@/components/api/content/content'
+import { useAppSelector } from '@/components/login/store/lib/hooks'
+import { selectDay } from '@/components/login/store/lib/counterSlice'
+import { getDayOfWeekVN, parseDateFromDDMMYYYY } from '@/components/utils/utils'
 
 const XoSoMienInput = (props) => {
     const [ketqua, setKetQua] = useState(props.ketqua)
+    // console.log("set new", ketqua, props.ketqua)
+    // const ketqua = props.ketqua
 
     const contentService = new Content()
+    // const selectedDate= useAppSelector(selectDay)
 
     useEffect(() => {
-        contentService.getKetQuaMien(ketqua[0].Vung, ketqua[0].Ngay).then((item) => {
+        getKetqua()
+    }, [])
+
+    useEffect(() => {
+        setKetQua(props.ketqua)
+        getKetqua()
+    }, [props])
+
+    const getKetqua = () => {
+        contentService.getKetQuaMien(props.ketqua[0].Vung, props.ketqua[0].Ngay, 0).then((item) => {
             const tinhs = item.data.map((item) => item.Tinh)
-            const newketqua = item.data.concat(ketqua.filter((item2) => !tinhs.includes(item2.Tinh))).sort((a, b) => a.Tinh.localeCompare(b.Tinh))
+            const newketqua = item.data.concat(props.ketqua.filter((item2) => !tinhs.includes(item2.Tinh))).sort((a, b) => a.Tinh.localeCompare(b.Tinh))
             setKetQua(newketqua)
         })
-    }, [])
+    }
 
     const onChangeInput = (giai, index, index2, id) => {
         const newKetQua = [...ketqua]
@@ -28,7 +43,7 @@ const XoSoMienInput = (props) => {
                     {`KQXS Miền Nam ( KQXS MN)`}
                 </div>
                 <div className='flex items-center justify-center text[16px] max-md:text-[13px] text-[#0073ea] font-[300]'>
-                    {`XSMN / XSMN ${ketqua[0].Thu} / XSMB ${ketqua[0].Ngay}`}
+                    {`XSMN / XSMN ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua[0].Ngay))} / XSMB ${ketqua[0].Ngay}`}
                 </div>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>

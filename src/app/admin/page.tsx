@@ -10,7 +10,9 @@ import XoSoMienBacInput from "@/components/inputs/xosomienbac/xosomienbacinput"
 import XoSoMienInput from "@/components/inputs/xosomien/xosomieninput"
 import XoSoVietlottInput from "@/components/inputs/xosovietlott/xosovietlott"
 import { templatkqxsmienbac, templatkqxsmiennam, templatekqxsmega, templatekqxsMax3D} from "@/components/inputs/xosomienbac/template"
-import  { getDayOfWeekVN, formatDateToDDMMYYYY}  from "@/components/utils/utils"
+import  { getDayOfWeekVN, formatDateToDDMMYYYY, parseDateFromDDMMYYYY }  from "@/components/utils/utils"
+import { useAppSelector } from '@/components/login/store/lib/hooks'
+import { selectDay } from '@/components/login/store/lib/counterSlice'
 
 const channel = [
     "Miền Nam",
@@ -21,8 +23,11 @@ const channel = [
 
 const Admin = () => {
     const [tab, setTabs] = useState(0)
-    const dayOfWeek = format(new Date(), 'EEEE', { locale: enUS})
+    const selectedDate= useAppSelector(selectDay)
+    const dayNow = parseDateFromDDMMYYYY(selectedDate)
+    const dayOfWeek = format(dayNow, 'EEEE', { locale: enUS})
     const dayOfWeekVN = parseDayofWeek(dayOfWeek)
+    
     const dataRule = calendar[dayOfWeekVN]
     const vietlottRule = vietlottCalendar[dayOfWeekVN]
     return (
@@ -43,13 +48,14 @@ const Admin = () => {
                     tab === 0 ?
                     <XoSoMienInput ketqua={
                         dataRule.nam.tinh.map((item) => {
-                            const template = JSON.parse(JSON.stringify(templatkqxsmiennam));
+                            const template = {...Object.freeze(templatkqxsmiennam)};
+                            // Object.freeze(template)
                             template["Tinh"] = item.ten
                             template["Vung"] = dataRule.nam.vi
-                            template["Thu"] = getDayOfWeekVN(new Date())
-                            template["Ngay"] = formatDateToDDMMYYYY(new Date())
+                            template["Thu"] = getDayOfWeekVN(dayNow)
+                            template["Ngay"] = formatDateToDDMMYYYY(dayNow)
                             return template
-                        })} 
+                        }).sort((a, b) => a.Tinh.localeCompare(b.Tinh))} 
                     />
                     :<></>
                 }
@@ -60,8 +66,8 @@ const Admin = () => {
                             const template = JSON.parse(JSON.stringify(templatkqxsmiennam));
                             template["Tinh"] = item.ten
                             template["Vung"] = dataRule.trung.vi
-                            template["Thu"] = getDayOfWeekVN(new Date())
-                            template["Ngay"] = formatDateToDDMMYYYY(new Date())
+                            template["Thu"] = getDayOfWeekVN(dayNow)
+                            template["Ngay"] = formatDateToDDMMYYYY(dayNow)
                             return template
                         }).sort((a, b) => a.Tinh.localeCompare(b.Tinh))} 
                     />
@@ -75,8 +81,8 @@ const Admin = () => {
                             const template = JSON.parse(JSON.stringify(templatkqxsmienbac));
                             template["Tinh"] = item.ten
                             template["Vung"] = dataRule.bac.vi
-                            template["Thu"] = getDayOfWeekVN(new Date())
-                            template["Ngay"] = formatDateToDDMMYYYY(new Date())
+                            template["Thu"] = getDayOfWeekVN(dayNow)
+                            template["Ngay"] = formatDateToDDMMYYYY(dayNow)
                             return <XoSoMienBacInput ketqua={template} key={index}/>
                         })}
                     </div>
@@ -89,8 +95,8 @@ const Admin = () => {
                             const template  =  (item.ten === "Max 3D") ? {...templatekqxsMax3D} : {...templatekqxsmega}
                             template["Tinh"] = item.ten
                             template["Vung"] = "Vietlott"
-                            template["Thu"] = getDayOfWeekVN(new Date())
-                            template["Ngay"] = formatDateToDDMMYYYY(new Date())
+                            template["Thu"] = getDayOfWeekVN(dayNow)
+                            template["Ngay"] = formatDateToDDMMYYYY(dayNow)
                             return template
                         })
                     }/>

@@ -52,7 +52,7 @@ const Header = (props:any) => {
     // const username = useAppSelector(selectUserName);
     // const password_ = useAppSelector(selectPassword);
     const role = useAppSelector(selectRole);
-    const[open, setOpen] = useState(false || role.length === 0)
+    const[open, setOpen] = useState(false || (role.length === 0 && login))
     // const isOn = useAppSelector(selectIsOn)
     return (
         <header className="flex flex-col w-full items-center justify-between">

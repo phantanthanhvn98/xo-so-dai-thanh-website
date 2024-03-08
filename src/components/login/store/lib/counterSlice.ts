@@ -1,5 +1,6 @@
 import { PayloadAction } from "@reduxjs/toolkit";
 import { createAppSlice } from "./createAppSlice";
+import { formatDateToDDMMYYYY } from "@/components/utils/utils";
 // import type { PayloadAction } from "@reduxjs/toolkit";
 
 export interface CounterSliceState {
@@ -7,13 +8,15 @@ export interface CounterSliceState {
   password: string;
   role: string;
   isOn: boolean;
+  day: string
 }
 
 const initialState: CounterSliceState = {
   username: '',
   password: '',
   role: '',
-  isOn: false
+  isOn: false,
+  day: formatDateToDDMMYYYY(new Date())
 };
 
 // If you are not using async thunks you can use the standalone `createSlice`.
@@ -33,6 +36,9 @@ export const counterSlice = createAppSlice({
       state.role = action.payload.role
       state.isOn = action.payload.isOn
     }),
+    selectedDate: create.reducer((state, action: PayloadAction<CounterSliceState>) => {
+      state.day = action.payload.day
+    })
     // decrement: create.reducer((state) => {
     //   state.value -= 1;
     // }),
@@ -54,13 +60,14 @@ export const counterSlice = createAppSlice({
     selectUserName: (counter) => counter.username,
     selectPassword: (counter) => counter.password,
     selectRole: (counter) => counter.role,
-    selectIsOn: (counter) => counter.isOn
+    selectIsOn: (counter) => counter.isOn,
+    selectDay: (counter) => counter.day
   },
 });
 
 // Action creators are generated for each case reducer function.
-export const { login } =
+export const { login, selectedDate } =
   counterSlice.actions;
 
 // Selectors returned by `slice.selectors` take the root state as their first argument.
-export const { selectUserName, selectPassword, selectRole, selectIsOn } = counterSlice.selectors;
+export const { selectUserName, selectPassword, selectRole, selectIsOn, selectDay } = counterSlice.selectors;

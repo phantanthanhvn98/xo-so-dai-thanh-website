@@ -6,10 +6,16 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 import "./calendar.css"
+import { formatDDMMYYY } from '@/components/utils/utils'
+import {
+    selectedDate
+  } from "@/components/login/store/lib/counterSlice";
+  
+import { useAppDispatch } from "@/components/login/store/lib/hooks";
 
 
 const Calendar = () => {
-     
+    const dispatch = useAppDispatch();
     useEffect(() => {
         let date = new Date();
         let year = date.getFullYear();
@@ -61,9 +67,9 @@ const Calendar = () => {
             for (let i = dayone; i > 0; i--) {
                 const day = moment(new Date(year, month-1, monthlastdate - i + 1)).lunar()
                 lit +=
-                    `<li class="inactive">
+                    `<li class="inactive ${monthlastdate - i + 1}-${month}-${year}">
                         ${monthlastdate - i + 1}
-                        <div class="lunar-date">
+                        <div class="lunar-date ${monthlastdate - i + 1}-${month}-${year}">
                             ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
                         </div
                     </li>`;
@@ -78,9 +84,9 @@ const Calendar = () => {
                     && year === new Date().getFullYear()
                     ? "active"
                     : "";
-                lit += `<li class="${isToday}">
+                lit += `<li class="${isToday} ${i}-${month+1}-${year}">
                     ${i}
-                    <div class="lunar-date">
+                    <div class="lunar-date ${i}-${month+1}-${year}">
                         ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
                     </div
                 </li>`;
@@ -89,10 +95,10 @@ const Calendar = () => {
             // Loop to add the first dates of the next month
             for (let i = dayend; i < 6; i++) {
                 const day = moment(new Date(year, month+1, i - dayend + 1)).lunar()
-                lit += `<li class="inactive">
+                lit += `<li class="inactive ${i - dayend + 1}-${month+2}-${year}">
                     ${i - dayend + 1}
-                    <div class="lunar-date">
-                    ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
+                    <div class="lunar-date ${i - dayend + 1}-${month+2}-${year}">
+                        ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
                     </div
                 </li>`
             }
@@ -100,6 +106,9 @@ const Calendar = () => {
             // Update the text of the current date element 
             // with the formatted current month and year
             currdate.innerText = `${months[month]} ${year}`;
+            day.addEventListener('click', function(event){
+                dispatch(selectedDate({day: formatDDMMYYY(event.target.className.split(' ')[1])}))
+            })
         
             // update the HTML of the dates element 
             // with the generated calendar

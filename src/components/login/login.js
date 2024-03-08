@@ -89,7 +89,7 @@ const Login = (props) => {
         setRemember(toggel)
     }
     const handleSetData = (data) => {
-        dispatch(dispatch(login(data)))
+        dispatch(login(data))
     };
     return (
         <div className={`flex relative w-full ${props.open ? "opacity-100 visible" : "invisible opacity-0"} transition-all ease-in duration-100`}>
