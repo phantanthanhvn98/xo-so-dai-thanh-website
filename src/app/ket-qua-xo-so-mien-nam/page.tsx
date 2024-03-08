@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Layout from '@/components/layout/layout';
 import XoSoMien from '@/components/result/xosomien/xosomien';
 import { Content } from '@/components/api/content/content';

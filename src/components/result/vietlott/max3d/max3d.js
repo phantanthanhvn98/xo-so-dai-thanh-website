@@ -1,51 +1,7 @@
 import React from "react";
 
-// const ketqua = {
-//     "_id": {
-//       "$oid": "65e042cfd4ea4048eee03bbc"
-//     },
-//     "Ngay": "03-01-2024",
-//     "Tinh": "Max3D",
-//     "Vung": "Vietlott",
-//     "KetQua": {
-//         "Giải tám": [
-//             "61",
-//             "14"
-//             ],
-//       "Giải bảy": [
-//         "61",
-//         "14",
-//         "85",
-//         "25"
-//       ],
-//       "Giải sáu": [
-//         "920",
-//         "945",
-//         "848",
-//         "920",
-//         "945",
-//         "848"
-//       ],
-//       "Giải kk": [
-//         "1198",
-//         "2132",
-//         "6734",
-//         "7342",
-//         "0172",
-//         "3018",
-//         "7342",
-//         "0172",
-//       ],
-      
-//     },
-//     "createdAt": {
-//       "$date": "2024-01-02T17:00:00.000Z"
-//     }
-// }
-
 const Max3D = (props) => {
     const ketqua = props.ketqua
-    console.log("test : ", ketqua)
     return (
         <div className="bg-[#fff">
             <div className='bg-[#f1bd2166]'>

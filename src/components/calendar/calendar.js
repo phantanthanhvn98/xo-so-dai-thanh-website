@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
 import { useEffect } from 'react';
-// import 'moment-lunar'
-// import moment from "moment";
+import Script from 'next/script'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 import "./calendar.css"
@@ -157,8 +156,8 @@ const Calendar = () => {
 
     return (
         <div className="calendar-container">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
-            <script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></script> 
+            <Script strategy='beforeInteractive' src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></Script> 
+            <Script strategy='beforeInteractive' src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></Script> 
             <header className="calendar-header">
                 <p className="calendar-current-date" />
                 <div className="calendar-navigation">
