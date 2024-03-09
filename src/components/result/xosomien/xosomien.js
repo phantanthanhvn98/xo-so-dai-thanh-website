@@ -11,7 +11,7 @@ const XoSoMien = (props) => {
                     {`KQXS ${props.vung} ( KQXS ${props.code})`}
                 </div>
                 <div className='flex items-center justify-center text[16px] max-md:text-[13px] text-[#0073ea] font-[300]'>
-                    {`XS${props.code} / XS${props.code} ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua[0].Ngay))} / XS${props.code} ${ketqua[0].Ngay}`}
+                    {`XS${props.code} / XS${props.code} ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua[0].Ngay))} / XS${props.code} ${ketqua[0].Ngay.replaceAll("-", "/")}`}
                 </div>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>

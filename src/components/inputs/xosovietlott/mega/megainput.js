@@ -46,15 +46,15 @@ const MegaInput = (props) => {
             <div className='bg-[#fff]'>
                 <div className='bg-[#f1bd2166]'>
                     <div className='flex items-center justify-center text-[20px] max-[500px]:text-[16px] text-[#ec222c] font-[500]'>
-                        {`Xổ Số ${ketqua.Tinh.replace("-", '/')} Ngày ${ketqua.Ngay}`}
+                        {`Xổ Số ${ketqua.Tinh.replaceAll("-", '/')} Ngày ${ketqua.Ngay}`}
                     </div>
                     <div className='flex items-center justify-center text[16px] max-[500px]:text-[14px] text-[#0073ea] font-[300]'>
-                        {`XS ${ketqua.Vung} / XS ${ketqua.Tinh.replace("-", '/')} ${ketqua.Thu}/ XS ${ketqua.Tinh.replace("-", '/')} ${ketqua.Ngay}`}
+                        {`XS ${ketqua.Vung} / XS ${ketqua.Tinh.replaceAll("-", '/')} ${ketqua.Thu}/ XS ${ketqua.Tinh.replaceAll("-", '/')} ${ketqua.Ngay}`}
                     </div>
                 </div>
                 <div className='flex flex-col gap-6 pt-6'>
                     <div className='flex items-center justify-center text-[18px] font-[300]'>
-                        {`Jackpot ${ketqua.Tinh.replace("-", '/')} ước tính`}
+                        {`Jackpot ${ketqua.Tinh.replaceAll("-", '/')} ước tính`}
                     </div>
                     <div className='flex items-center justify-center'>
                         <input id="gia-tri-quay-thuong" onChange={() => onChangeGiaTriQuayThuong("gia-tri-quay-thuong" )} defaultValue={ketqua.Giatri} className='flex items-center text-center focus:outline-none justify-center pl-3 pr-3 pt-2.5 pb-2.5 bg-[#ec222c] text-[24px] text-[#fff] font-[500] rounded-[5rem]' />

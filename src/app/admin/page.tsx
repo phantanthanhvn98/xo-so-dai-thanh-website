@@ -97,7 +97,7 @@ const Admin = () => {
                     <XoSoVietlottInput ketqua={
                         vietlottRule.vietlott.tinh.map((item: any) => {
                             const template  =  (item.ten === "Max 3D") ? {...templatekqxsMax3D} : {...templatekqxsmega}
-                            template["Tinh"] = item.ten.replace("/", '-')
+                            template["Tinh"] = item.ten.replaceAll("/", '-')
                             template["Vung"] = "Vietlott"
                             template["Thu"] = getDayOfWeekVN(dayNow)
                             template["Ngay"] = formatDateToDDMMYYYY(dayNow)

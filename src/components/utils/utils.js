@@ -51,5 +51,5 @@ export function parseDateFromDDMMYYYY(dateString) {
 }
 
 export const tinhToUrl = (item) => {
-  return `${item.ten.replace(" ", "-").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}-${codeByTinh[item.ten]}`
+  return `${item.ten.replaceAll(" ", "-").toLowerCase().normalize("NFD").replaceAll(/[\u0300-\u036f]/g, "")}-${codeByTinh[item.ten]}`
 }

@@ -8,10 +8,10 @@ const XoSoMienBac = (props) => {
         <div className='bg-[#fff]'>
             <div className='bg-[#f1bd2166]'>
                 <div className='flex items-center justify-center text-[20px] max-[400px]:text-[16px] text-[#ec222c] font-[500]'>
-                    KQXS Miền Bắc ( KQXS MB)
+                    {`KQXS Miền Bắc -  KQXS ${ketqua.Tinh}`}
                 </div>
                 <div className='flex items-center justify-center text[16px] max-[400px]:text-[13px] text-[#0073ea] font-[300]'>
-                    {`XSMB / XSMB ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua.Ngay))} / XSMB ${ketqua.Ngay}`}
+                    {`XSMB / XSMB ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua.Ngay))} / XSMB ${ketqua.Ngay.replaceAll("-", "/")}`}
                 </div>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>

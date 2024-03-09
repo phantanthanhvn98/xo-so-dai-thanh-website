@@ -1,54 +1,5 @@
 import React from 'react'
 
-// const ketqua = {
-//     "_id": {
-//       "$oid": "65e042cfd4ea4048eee03c7a"
-//     },
-//     "Ngay": "01-02-2024",
-//     "Tinh": "Tây Ninh",
-//     "Vung": "Miền Nam",
-//     "KetQua": {
-//       "Giải tám": [
-//         "13"
-//       ],
-//       "Giải bảy": [
-//         "027"
-//       ],
-//       "Giải sáu": [
-//         "4084",
-//         "3837",
-//         "2270"
-//       ],
-//       "Giải năm": [
-//         "4487"
-//       ],
-//       "Giải tư": [
-//         "97095",
-//         "21524",
-//         "98958",
-//         "31812",
-//         "64080",
-//         "34310",
-//         "96504"
-//       ],
-//       "Giải ba": [
-//         "70709",
-//         "79465"
-//       ],
-//       "Giải nhì": [
-//         "63253"
-//       ],
-//       "Giải nhất": [
-//         "15970"
-//       ],
-//       "Giải đặc biệt": [
-//         "549159"
-//       ]
-//     },
-//     "createdAt": {
-//       "$date": "2024-01-31T17:00:00.000Z"
-//     }
-//   }
 
 const XoSoMienNamTinh = (props) => {
     const ketqua = props.ketqua
@@ -59,7 +10,7 @@ const XoSoMienNamTinh = (props) => {
                     { `KQXS ${ketqua.Tinh} ( KQXS MN)` }
                 </div>
                 <div className='flex items-center justify-center text[16px] text-[#0073ea] font-[300]'>
-                    { `XS ${ketqua.Tinh} / Xổ Số ${ketqua.Tinh} Thứ 4 / XS ${ketqua.Vung} ${ketqua.Ngay}`} 
+                    { `XS ${ketqua.Tinh} / Xổ Số ${ketqua.Tinh} Thứ 4 / XS ${ketqua.Vung} ${ketqua.Ngay.replaceAll("-", "/")}`} 
                 </div>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>

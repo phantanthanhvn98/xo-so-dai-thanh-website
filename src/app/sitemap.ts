@@ -38,18 +38,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'daily',
         priority: 1,
     },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-cao-bang-11.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-lang-son-12.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-cao-bang-11.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-lang-son-12.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
     {
       url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-quang-ninh-14.html',
       lastModified: new Date(),
@@ -69,101 +69,101 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.88
     },
     {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-nam-đinh-18.html',
+      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-nam-dinh-18.html',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.88
     },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-phu-tho-19.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-thai-nguyen-20.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-yen-bai-21.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-tuyen-quang-22.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ha-giang-23.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-lao-cai-24.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-lai-chau-25.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-son-la-26.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-đien-bien-27.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-hoa-binh-28.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-hai-duong-34.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ninh-binh-35.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-thanh-hoa-36.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-nghe-an-37.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ha-tinh-38.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-phu-tho-19.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-thai-nguyen-20.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-yen-bai-21.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-tuyen-quang-22.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ha-giang-23.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-lao-cai-24.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-lai-chau-25.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-son-la-26.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-dien-bien-27.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-hoa-binh-28.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-hai-duong-34.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ninh-binh-35.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-thanh-hoa-36.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-nghe-an-37.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ha-tinh-38.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
     {
       url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ha-noi-40.html',
       lastModified: new Date(),
@@ -171,7 +171,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.88
     },
     {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-tp.-đa nang-43.html',
+      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-da-nang-43.html',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.88
@@ -182,20 +182,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.88
     },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-đak-nong-48.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
     {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-đak-nong-48.html',
+      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-da-lat-49.html',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.88
     },
     {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-lam-đong-49.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-tp-ho chi minh-50.html',
+      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-tp-hcm-50.html',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.88
@@ -291,7 +291,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.88
     },
     {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-thua-thien hue-75.html',
+      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-thua-thien-hue-75.html',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.88
@@ -303,7 +303,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.88
     },
     {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-binh-đinh-77.html',
+      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-binh-dinh-77.html',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.88
@@ -314,12 +314,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.88
     },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-khanh-hoa-79.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-khanh-hoa-79.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
     {
       url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-gia-lai-81.html',
       lastModified: new Date(),
@@ -356,24 +356,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.88
     },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-vinh-phuc-88.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-hung-yen-89.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ha-nam-90.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-vinh-phuc-88.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-hung-yen-89.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ha-nam-90.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
     {
       url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-quang-nam-92.html',
       lastModified: new Date(),
@@ -398,18 +398,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.88
     },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-bac-kan-97.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
-    {
-      url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-bac-giang-98.html',
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.88
-    },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-bac-kan-97.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
+    // {
+    //   url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-bac-giang-98.html',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'daily',
+    //   priority: 0.88
+    // },
     {
       url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-bac-ninh-99.html',
       lastModified: new Date(),
