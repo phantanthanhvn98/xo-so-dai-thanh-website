@@ -195,26 +195,32 @@ export default function RootLayout({
           <ToastContainer theme="dark"/>
         </body>
         <Script
+          id="script-ld-1"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script1) }}
         />
         <Script
+          id="script-ld-2"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script2) }}
         />
         <Script
+          id="script-ld-3"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script3) }}
         />
         <Script
+          id="script-ld-4"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script4) }}
         />
         <Script
+          id="script-ld-5"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script5) }}
         />
         <Script
+          id="script-ld-6"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script6) }}
         />
