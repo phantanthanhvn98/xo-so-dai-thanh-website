@@ -3,7 +3,7 @@ import XoSoMienBac from "@/components/result/xosomienbac/xosomienbac"
 import XoSoMien from "@/components/result/xosomien/xosomien"
 import { Content } from "@/components/api/content/content";
 
-export default async function Home() {
+export default async function XoSoHomNayPage() {
   const contentService = new Content()
   const dataDate = (await contentService.getKetQuaNgay('latest'))?.data
 

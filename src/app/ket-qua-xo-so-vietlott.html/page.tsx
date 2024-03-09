@@ -5,6 +5,13 @@ import Mega645 from '@/components/result/vietlott/mega645/mega645'
 import Mega655 from '@/components/result/vietlott/mega655/mega655'
 import Max3D from '@/components/result/vietlott/max3d/max3d'
 import { Content } from '@/components/api/content/content';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://xosodaithanh.vn/'),
+  title: "Xổ Số Đại Thành - Kết Quả Xổ Số Vietlott - Kết quả Xổ Số Mega 6/45 - Kết quả Xổ Số Power 6/55 - Kết quả Xổ Số Mã 3D - Kết Quả Xổ Số Hôm Nay",
+  description: "Xổ Số Đại Thành, Cập Nhật KQXS Điện Toán Vietlott, XS Mega 6/45, XS Power 6/55, XS Max 3D Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
+};
 
 const vietlott  = [
   {

@@ -1,6 +1,13 @@
 import Layout from '@/components/layout/layout';
 import XoSoMien from '@/components/result/xosomien/xosomien';
 import { Content } from '@/components/api/content/content';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://xosodaithanh.vn/'),
+  title: "Xổ Số Đại Thành - Kết quả Xổ Số Miền Nam - Xổ Số Miền Nam - XSMN - Xổ Số MN - KQXS MN",
+  description: "Cập Nhật KQXS Miền Nam, XSMN, Xổ Số Miền Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
+};
 
 const XoSoMienNamPage = async () => {
   const contentService = new Content()

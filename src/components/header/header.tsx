@@ -18,31 +18,31 @@ const headers = [
     },
     {
         name: "Miền Nam",
-        uri: "/ket-qua-xo-so-mien-nam"
+        uri: "/ket-qua-xo-so-mien-nam.html"
     },
     {
         name: "Miền Trung",
-        uri: "/ket-qua-xo-so-mien-trung"
+        uri: "/ket-qua-xo-so-mien-trung.html"
     },
     {
         name: "Miền Bắc",
-        uri: "/ket-qua-xo-so-mien-bac"
+        uri: "/ket-qua-xo-so-mien-bac.html"
     },
     {
         name: "Vietlott",
-        uri: "/ket-qua-xo-so-vietlott"
+        uri: "/ket-qua-xo-so-vietlott.html"
     },
     {
         name: "Phân Tích",
-        uri: "/phan-tich-ket-qua-xo-so"
+        uri: "/phan-tich-ket-qua-xo-so.html"
     },
     {
         name: "Dự Đoán",
-        uri: "/du-doan-ket-qua-xo-so"
+        uri: "/du-doan-ket-qua-xo-so.html"
     },
     {
         name: "Tin Xổ Số",
-        uri: "/tin-xo-so"
+        uri: "/tin-xo-so.html"
     },
 ]
 
@@ -59,7 +59,7 @@ const Header = (props:any) => {
             <div className="flex max-[1090px]:flex-col w-full items-center justify-between">
                 <div className="flex max-[1090px]:w-full justify-between pl-8 pr-8 pt-4 pb-4 max-[400px]:pl-4 max-[400px]:pr-4">
                     <div className=" flex items-center min-[1090px]:hidden cursor-pointer">
-                        <Link href={"/"} prefetch={false}>
+                        <Link href={"/ket-qua-xo-so-hom-nay.html"} prefetch={false}>
                             <Image className="max-[400px]:w-5 max-[400px]:h-5" src={calendarLogo} alt="kết quả xổ số hôm nay"/>
                         </Link>
                     </div>
