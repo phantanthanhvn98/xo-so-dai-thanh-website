@@ -1,7 +1,7 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import { useEffect } from 'react';
-import Script from 'next/script'
+// import Script from 'next/script'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 import "./calendar.css"
@@ -12,10 +12,10 @@ import { useAppDispatch } from "@/components/login/store/lib/hooks";
 
 const Calendar = () => {
     const dispatch = useAppDispatch();
-    const [onload1, setOnload1] = useState(true)
-    const [onload2, setOnload2] = useState(true)
+    // const [onload1, setOnload1] = useState(true)
+    // const [onload2, setOnload2] = useState(true)
     useEffect(() => {
-        if(!(onload1 && onload2)){
+        // if(!(onload1 && onload2)){
             let date = new Date();
             let year = date.getFullYear();
             let month = date.getMonth();
@@ -64,19 +64,20 @@ const Calendar = () => {
             
                 // Loop to add the last dates of the previous month
                 for (let i = dayone; i > 0; i--) {
-                    const day = moment(new Date(year, month-1, monthlastdate - i + 1)).lunar()
+                    // const day = moment(new Date(year, month-1, monthlastdate - i + 1)).lunar()
                     lit +=
                         `<li class="inactive ${monthlastdate - i + 1}-${month}-${year}">
                             ${monthlastdate - i + 1}
-                            <div class="lunar-date ${monthlastdate - i + 1}-${month}-${year}">
-                                ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
-                            </div
+                            
                         </li>`;
+                        // <div class="lunar-date ${monthlastdate - i + 1}-${month}-${year}">
+                        //     ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
+                        // </div
                 }
             
                 // Loop to add the dates of the current month
                 for (let i = 1; i <= lastdate; i++) {
-                    const day = moment(new Date(year, month, i)).lunar()
+                    // const day = moment(new Date(year, month, i)).lunar()
                     // Check if the current date is today
                     let isToday = i === date.getDate()
                         && month === new Date().getMonth()
@@ -85,21 +86,23 @@ const Calendar = () => {
                         : "";
                     lit += `<li class="${isToday} ${i}-${month+1}-${year}">
                         ${i}
-                        <div class="lunar-date ${i}-${month+1}-${year}">
-                            ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
-                        </div
+                        
                     </li>`;
+                    // <div class="lunar-date ${i}-${month+1}-${year}">
+                    //         ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
+                    // </div
                 }
             
                 // Loop to add the first dates of the next month
                 for (let i = dayend; i < 6; i++) {
-                    const day = moment(new Date(year, month+1, i - dayend + 1)).lunar()
+                    // const day = moment(new Date(year, month+1, i - dayend + 1)).lunar()
                     lit += `<li class="inactive ${i - dayend + 1}-${month+2}-${year}">
                         ${i - dayend + 1}
-                        <div class="lunar-date ${i - dayend + 1}-${month+2}-${year}">
-                            ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
-                        </div
+                        
                     </li>`
+                    // <div class="lunar-date ${i - dayend + 1}-${month+2}-${year}">
+                    //         ${day.toDate().getDate() === 1 ? day.format('DD/MM') : day.format('DD') }
+                    // </div
                 }
             
                 // Update the text of the current date element 
@@ -152,14 +155,14 @@ const Calendar = () => {
                     manipulate();
                 });
             });
-        }
-    }, [onload1, onload2])
+        // }
+    }, [])
 
 
     return (
         <div className="calendar-container">
-            <Script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" onReady={() => setOnload1(false)}></Script> 
-            <Script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js" onReady={() => setOnload2(false)}></Script> 
+            {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" onReady={() => setOnload1(false)}></Script> 
+            <Script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js" onReady={() => setOnload2(false)}></Script>  */}
             <header className="calendar-header">
                 <p className="calendar-current-date" />
                 <div className="calendar-navigation">

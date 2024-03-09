@@ -1,6 +1,7 @@
 import { format } from 'date-fns';
 import vi from 'date-fns/locale/vi';
 import { split } from 'postcss/lib/list';
+import { codeByTinh } from '@/assets/utils/constants';
 
 export const parseDayofWeek = (dateOfWeek) => {
   if(dateOfWeek === "Monday"){
@@ -47,4 +48,8 @@ export function parseDateFromDDMMYYYY(dateString) {
   const parsedDate = new Date(`${year}-${month}-${day}`);
 
   return parsedDate;
+}
+
+export const tinhToUrl = (item) => {
+  return `${item.ten.replace(" ", "-").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}-${codeByTinh[item.ten]}`
 }

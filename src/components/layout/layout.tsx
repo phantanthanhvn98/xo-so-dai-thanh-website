@@ -4,8 +4,10 @@ import Footer from "../footer/footer";
 import Header from "../header/header";
 import { format } from "date-fns";
 import { enUS } from "date-fns/locale";
-import { parseDayofWeek } from "../utils/utils";
+import { parseDayofWeek, tinhToUrl } from "../utils/utils";
 import { calendar } from "@/assets/utils/calendar";
+import Link from "next/link";
+import { codeByTinh } from "@/assets/utils/constants";
 
 export default function Layout ({children, login}: any) {
     const dayOfWeek = format(new Date(), 'EEEE', { locale: enUS})
@@ -22,34 +24,49 @@ export default function Layout ({children, login}: any) {
                       Xổ Số - Kết Quả Xổ Số Hôm Nay - Kết Quả Xổ Số 3 Miền
                   </div>
                   <div className="grid grid-cols-3 grid-rows-4 bg-[#fff]">
-                    <div className="flex items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad]  font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]">
-                      XS Miền Bắc
-                    </div>
-                    <div className="flex items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad]  font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]">
-                      XS Miền Nam
-                    </div>
-                    <div className="flex items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad] font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]">
-                      XS Miền Trung
-                    </div>
+                    <Link href={'/ket-qua-xo-so-hom-nay.html'}  prefetch={false}>
+                      <div className="flex cursor-pointer items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad]  font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]">
+                        XS Hôm Nay
+                      </div>
+                    </Link>
+                    <Link href={'/ket-qua-xo-so-mien-bac.html'}  prefetch={false}>
+                      <div className="flex cursor-pointer items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad]  font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]">
+                        XS Miền Bắc
+                      </div>
+                    </Link>
+                    <Link href={'/ket-qua-xo-so-mien-nam.html'}  prefetch={false}>
+                      <div className="flex cursor-pointer items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad]  font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]">
+                        XS Miền Nam
+                      </div>
+                    </Link>
+                    <Link href={'/ket-qua-xo-so-mien-trung.html'}  prefetch={false}>
+                      <div className="flex cursor-pointer items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad] font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]">
+                        XS Miền Trung
+                      </div>
+                    </Link>
                     {
                       dataRule.nam.tinh.map((item: any, index: number) => {
                         return (
-                          <div className="flex items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad] font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]" key={index}>
-                            {
-                              item.ten
-                            }
-                          </div>
+                          <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
+                            <div className="flex cursor-pointer items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad] font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]" key={index}>
+                              {
+                                item.ten
+                              }
+                            </div>
+                          </Link>
                         )
                       })
                     }
                     {
                       dataRule.trung.tinh.map((item: any, index: number) => {
                         return (
-                          <div className="flex items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad]  font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]" key={index}>
-                            {
-                              item.ten
-                            }
-                          </div>
+                          <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
+                            <div className="flex cursor-pointer items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad]  font-[500] border-[1px] border-t-0 border-r-0 border-solid border-[#b9b9b9]" key={index}>
+                              {
+                                item.ten
+                              }
+                            </div>
+                          </Link>
                         )
                       })
                     }

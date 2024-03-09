@@ -189,6 +189,7 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html lang="vi">
+        <meta name="theme-color" content="#fff" />
         <body className={lexend.className}>
           {children}
           <ToastContainer theme="dark"/>

@@ -13,13 +13,13 @@ export default function manifest(): MetadataRoute.Manifest {
         "src": logo192.src,
         "sizes": "192x192",
         "type": "image/png",
-        "purpose": "any"
+        "purpose": "maskable"
       },
       {
         "src": logo512.src,
         "sizes": "512x512",
         "type": "image/png",
-        "purpose": "any"
+        "purpose": "maskable"
       }
     ],
     "theme_color": "#1A94FF",

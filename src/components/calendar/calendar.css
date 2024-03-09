@@ -88,8 +88,10 @@ header .calendar-current-date {
     font-size: 16px;
     font-weight: normal;
 
-    text-align: left;
-    /* display: flex; */
+    /* text-align: left; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .calendar-dates li.inactive {
     color: #aaa;

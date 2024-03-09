@@ -19,12 +19,25 @@ export class API {
             url: `${this.baseUrl}/${uri}`,
             headers: { 
               'Content-Type': 'application/json',
-              'username': this.username,
-              'password': this.password
             },
             data : JSON.stringify(data)
           };
           
         return axios.request(config)
     }
+    callSave(uri, method, data) {
+      let config = {
+          method: method,
+          maxBodyLength: Infinity,
+          url: `${this.baseUrl}/${uri}`,
+          headers: { 
+            'Content-Type': 'application/json',
+            'username': localStorage.getItem("USERNAME"),
+            'password': localStorage.getItem("PASSWORD")
+          },
+          data : JSON.stringify(data)
+        };
+        
+      return axios.request(config)
+  }
 }

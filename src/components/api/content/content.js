@@ -35,7 +35,7 @@ export class Content {
     /////////////////////////// SETTER //////////////////////////
 
     insert(data){
-        const ketqua =  this.api.call(
+        const ketqua =  this.api.callSave(
             'ketquaxoso',
             "post",
             data
