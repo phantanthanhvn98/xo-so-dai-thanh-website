@@ -1,9 +1,11 @@
+import React from 'react';
 import { format } from 'date-fns';
 import vi from 'date-fns/locale/vi';
 import { split } from 'postcss/lib/list';
 import { codeByTinh } from '@/assets/utils/constants';
-
 import "./loader.css"
+
+
 export const parseDayofWeek = (dateOfWeek) => {
   if(dateOfWeek === "Monday"){
     return "thu2"

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import XoSoMien from "@/components/result/xosomien/xosomien";
 import XoSoMienBac from "@/components/result/xosomienbac/xosomienbac";
 import { Content } from "@/components/api/content/content";
-// import "./loader.css"
 
 
 const HomePage = (props:any) => {
@@ -12,6 +11,7 @@ const HomePage = (props:any) => {
     const [id, setId] = useState<any>()
 
     useEffect(() => {
+        localStorage.setItem("DATA", ketqua)
         const nam = ketqua["Miền Nam"].map((item: any) => {
             return item.KetQua["Giải đặc biệt"][0] === ""
         })
@@ -44,7 +44,13 @@ const HomePage = (props:any) => {
 
     const interVal = () => {
         contentService.getKetQuaNgay('latest').then((item: any) =>{
-            setKetQua(item.data)
+            if(localStorage.getItem("DATA") !== JSON.stringify(item.data)){
+                const audio = new Audio("ten.m4a")
+                audio.volume = 0.5
+                audio.play()
+                setKetQua(item.data)
+                localStorage.setItem("DATA", JSON.stringify(item.data))
+            }
         })
     }
     return (

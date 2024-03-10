@@ -11,6 +11,7 @@ const ComponentTinh = (props: any) => {
     const [ketqua, setKetQua] = useState<any>(props.ketqua)
     const [id, setId] = useState<any>()
     useEffect(() => {
+      localStorage.setItem("DATA", ketqua)
       const mien = ketqua[0].KetQua["Giải đặc biệt"][0] === ""
       if(mien)
           setId(setInterval(interVal, 15000))
@@ -26,7 +27,13 @@ const ComponentTinh = (props: any) => {
 
   const interVal = () => {
     contentService.getKetQuaTinh(vung, tinh, "09-03-2024", 7).then((item: any) =>{
-          setKetQua(item.data)
+          if(localStorage.getItem("DATA") !== JSON.stringify(item.data)){
+            const audio = new Audio("ten.m4a")
+            audio.volume = 0.5
+            audio.play()
+            setKetQua(item.data)
+            localStorage.setItem("DATA", JSON.stringify(item.data))
+        }
       })
   }
   

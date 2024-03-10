@@ -1,3 +1,4 @@
+import { unstable_noStore as noStore } from 'next/cache';
 import axios from 'axios'
 // import {
 //   selectUserName,
@@ -13,6 +14,7 @@ export class API {
     }
 
     call(uri, method, data) {
+        noStore();
         let config = {
             method: method,
             maxBodyLength: Infinity,

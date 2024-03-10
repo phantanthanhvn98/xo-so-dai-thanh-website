@@ -5,6 +5,7 @@ useState } from "react";
 import { Content } from "../api/content/content";
 import XoSoMienBac from "../result/xosomienbac/xosomienbac";
 import XoSoMien from "../result/xosomien/xosomien";
+
 const Component = (props: any) => {
     const contentService = new Content()
     const [ketqua, setKetQua] = useState<any>(props.ketqua)
@@ -13,6 +14,7 @@ const Component = (props: any) => {
     const vung = props.vung
 
     useEffect(() => {
+        localStorage.setItem("DATA", ketqua)
         const mien = ketqua[Object.keys(ketqua)[0]].map((item: any) => {
             return item.KetQua["Giải đặc biệt"][0] === ""
         })
@@ -32,7 +34,13 @@ const Component = (props: any) => {
 
     const interVal = () => {
         contentService.getKetQuaMien(vung, "latest", 3).then((item: any) =>{
-            setKetQua(item.data)
+            if(localStorage.getItem("DATA") !== JSON.stringify(item.data)){
+                const audio = new Audio("ten.m4a")
+                audio.volume = 0.5
+                audio.play()
+                setKetQua(item.data)
+                localStorage.setItem("DATA", JSON.stringify(item.data))
+            }
         })
     }
     
