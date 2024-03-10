@@ -4,7 +4,7 @@ import { Content } from '@/components/api/content/content'
 
 const Max3dInput = (props) => {
     const [ketqua, setKetQua] = useState(props.ketqua)
-    const contentService = new Content()
+    const contentService = new Content("https://api.xosodaithanh.vn")
 
     useEffect(() => {
         getKetqua()

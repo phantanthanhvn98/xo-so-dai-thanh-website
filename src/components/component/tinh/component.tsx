@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react"
 const ComponentTinh = (props: any) => {
     const vung = props.vung
     const tinh = props.tinh
-    const contentService = new Content()
+    const contentService = new Content("https://api.xosodaithanh.vn")
     const [ketqua, setKetQua] = useState<any>(props.ketqua)
     const [id, setId] = useState<any>()
     useEffect(() => {

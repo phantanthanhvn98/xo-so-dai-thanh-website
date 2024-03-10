@@ -21,7 +21,7 @@ const Login = (props) => {
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("")
     const [remember, setRemember] = useState(false)
-    const security = new Security() 
+    const security = new Security("https://api.xosodaithanh.vn") 
 
     const dispatch = useAppDispatch();
     // const username = useAppSelector(selectUserName);

@@ -5,7 +5,7 @@ import { Content } from '@/components/api/content/content'
   
 const MegaInput = (props) => {
     const [ketqua, setKetQua] = useState(props.ketqua)
-    const contentService = new Content()
+    const contentService = new Content("https://api.xosodaithanh.vn")
 
     useEffect(() => {
         getKetqua()

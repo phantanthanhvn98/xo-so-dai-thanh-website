@@ -247,7 +247,10 @@ export const calendar = {
                     ten: "Khánh Hòa"
                 },
                 {
-                    ten: "Kontum"
+                    ten: "Kon Tum"
+                },
+                {
+                    ten: "Thừa Thiên Huế"
                 }
             ]
         },

@@ -7,8 +7,9 @@ import axios from 'axios'
 
 // import {useAppSelector } from "@/components/login/store/lib/hooks";
 export class API {
-    constructor(){
-        this.baseUrl = "http://localhost:8764"
+    constructor(url="http://localhost:8764"){
+        // this.baseUrl = "http://localhost:8764"
+        this.baseUrl = url
         // this.username = useAppSelector(selectUserName);
         // this.password = useAppSelector(selectPassword);
     }

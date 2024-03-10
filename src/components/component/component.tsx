@@ -7,7 +7,7 @@ import XoSoMienBac from "../result/xosomienbac/xosomienbac";
 import XoSoMien from "../result/xosomien/xosomien";
 
 const Component = (props: any) => {
-    const contentService = new Content()
+    const contentService = new Content("https://api.xosodaithanh.vn")
     const [ketqua, setKetQua] = useState<any>(props.ketqua)
     const [id, setId] = useState<any>()
     const code = props.code

@@ -1,8 +1,8 @@
 import { API } from "../api"
 
 export class Security {
-    constructor(){
-        this.api = new API()
+    constructor(url='http://localhost:8764'){
+        this.api = new API(url)
     }
 
     login(userName, password){

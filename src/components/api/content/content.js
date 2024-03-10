@@ -1,8 +1,8 @@
 import { toast } from 'react-toastify'
 import { API } from '../api'
 export class Content {
-    constructor(){
-        this.api = new API()
+    constructor(url="http://localhost:8764"){
+        this.api = new API(url)
     }
 
     /////////////////////////// GETTER //////////////////////////

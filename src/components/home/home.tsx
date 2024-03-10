@@ -6,7 +6,7 @@ import { Content } from "@/components/api/content/content";
 
 
 const HomePage = (props:any) => {
-    const contentService = new Content()
+    const contentService = new Content("https://api.xosodaithanh.vn")
     const [ketqua, setKetQua] = useState<any>(props.ketqua)
     const [id, setId] = useState<any>()
 

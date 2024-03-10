@@ -52,7 +52,7 @@ export const codeTinh = {
     '76': 'Quảng Ngãi',
     '77': 'Bình Định',
     '78': 'Phú Yên',
-    '79': 'Khánh Hoà',
+    '79': 'Khánh Hòa',
     '81': 'Gia Lai',
     '82': 'Kon Tum',
     '83': 'Sóc Trăng',
