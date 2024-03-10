@@ -6,6 +6,7 @@ import { redirect } from 'next/navigation'
 import { Content } from "@/components/api/content/content";
 import XoSoMienNamTinh from '@/components/result/xosomiennam/xosomiennamtinh'
 import XoSoMienBac from "@/components/result/xosomienbac/xosomienbac";
+import ComponentTinh from "@/components/component/tinh/component";
  
 type Props = {
   params: { tinh: string }
@@ -37,25 +38,7 @@ export default async function KetQuaTinh ( { params } : any){
   
   return (
     <Layout>
-      {
-        ["Miền Nam", "Miền Trung"].includes(vung) ?
-        <div className="flex flex-col gap-4">
-          {
-            dataDate.map((item: any, index: number) =>{
-              return <XoSoMienNamTinh ketqua={item} key={index}/>
-            })
-          }
-        </div>
-        : <></>
-      }
-      {
-        vung === "Miền Bắc" ?
-        dataDate.map((item: any, index: number) =>{
-          return <XoSoMienBac ketqua={[ item ]} key={index}/>
-        })
-        :<></>
-      }
-
+      <ComponentTinh ketqua={dataDate} code={code} vung={vung} tinh={tinh}/>
     </Layout>
   );
 };

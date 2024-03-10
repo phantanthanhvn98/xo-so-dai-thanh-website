@@ -1,6 +1,6 @@
 import React from "react"
 
-import {getDayOfWeekVN, parseDateFromDDMMYYYY} from '@/components/utils/utils'
+import {getDayOfWeekVN, parseDateFromDDMMYYYY, parseLive} from '@/components/utils/utils'
 
 const XoSoMien = (props) => {
     const ketqua = props.ketqua
@@ -43,7 +43,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải tám"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center text-[#ec222c] max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })
@@ -67,7 +67,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải bảy"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })
@@ -91,7 +91,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải sáu"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })
@@ -115,7 +115,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải năm"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })
@@ -139,7 +139,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải tư"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })
@@ -163,7 +163,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải ba"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })
@@ -187,7 +187,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải nhì"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })
@@ -211,7 +211,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải nhất"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })
@@ -235,7 +235,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải đặc biệt"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center text-[#ec222c] max-[400px]:text-[20px]" key={index2}>
-                                                    {item2}
+                                                    {parseLive(item2)}
                                                 </div>
                                             )
                                         })

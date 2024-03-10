@@ -1,5 +1,5 @@
 import React from 'react'
-import {getDayOfWeekVN, parseDateFromDDMMYYYY} from '@/components/utils/utils'
+import {getDayOfWeekVN, parseDateFromDDMMYYYY, parseLive} from '@/components/utils/utils'
 
 const XoSoMienBac = (props) => {
     const ketqua = props.ketqua[0]
@@ -20,7 +20,7 @@ const XoSoMienBac = (props) => {
                 </div>
                 <div className='flex w-full items-center justify-center text-[32px] text-[#ec222c] font-[500] border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
-                        ketqua.KetQua["Giải đặc biệt"][0]
+                        parseLive(ketqua.KetQua["Giải đặc biệt"][0])
                     }
                 </div>
             </div>
@@ -33,7 +33,7 @@ const XoSoMienBac = (props) => {
                         ketqua.KetQua["Giải nhất"].map((item, index) => {
                             return (
                                 <div className='flex items-center justify-center' key={index}>
-                                    {item}
+                                    {parseLive(item)}
                                 </div>
                             )
                         })
@@ -49,7 +49,7 @@ const XoSoMienBac = (props) => {
                         ketqua.KetQua["Giải nhì"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {item}
+                                    {parseLive(item)}
                                 </div>
                             )
                         })
@@ -65,7 +65,7 @@ const XoSoMienBac = (props) => {
                         ketqua.KetQua["Giải ba"].map((item, index) => {
                             return (
                                 <div className={`flex w-full items-center justify-center`} key={index}>
-                                    {item}
+                                    {parseLive(item)}
                                 </div>
                             )
                         })
@@ -81,7 +81,7 @@ const XoSoMienBac = (props) => {
                         ketqua.KetQua["Giải tư"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {item}
+                                    {parseLive(item)}
                                 </div>
                             )
                         })
@@ -97,7 +97,7 @@ const XoSoMienBac = (props) => {
                         ketqua.KetQua["Giải năm"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {item}
+                                    {parseLive(item)}
                                 </div>
                             )
                         })
@@ -113,7 +113,7 @@ const XoSoMienBac = (props) => {
                         ketqua.KetQua["Giải sáu"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {item}
+                                    {parseLive(item)}
                                 </div>
                             )
                         })
@@ -129,7 +129,7 @@ const XoSoMienBac = (props) => {
                         ketqua.KetQua["Giải bảy"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {item}
+                                    {parseLive(item)}
                                 </div>
                             )
                         })

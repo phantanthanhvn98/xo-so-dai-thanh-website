@@ -75,7 +75,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center text-[#ec222c] max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input id={`giam-tam-${index}-${index2}`} onChange={() => onChangeInput("Giải tám", index, index2, `giam-tam-${index}-${index2}`)} type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input id={`giam-tam-${index}-${index2}`} onInput={() => onChangeInput("Giải tám", index, index2, `giam-tam-${index}-${index2}`)} type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
                                             )
                                         })
                                     }
@@ -100,7 +100,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input  id={`giam-bay-${index}-${index2}`} onChange={() => onChangeInput("Giải bảy", index, index2, `giam-bay-${index}-${index2}`)}  type='text' defaultValue={item2} className={`bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input  id={`giam-bay-${index}-${index2}`} onInput={() => onChangeInput("Giải bảy", index, index2, `giam-bay-${index}-${index2}`)}  type='text' defaultValue={item2} className={`bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
                                             )
                                         })
                                     }
@@ -125,7 +125,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input id={`giam-sau-${index}-${index2}`} onChange={() => onChangeInput("Giải sáu", index, index2, `giam-sau-${index}-${index2}`)}  type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-b-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input id={`giam-sau-${index}-${index2}`} onInput={() => onChangeInput("Giải sáu", index, index2, `giam-sau-${index}-${index2}`)}  type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-b-[1px] border-[#0000001a]`} key={index2}/>
                                             )
                                         })
                                     }
@@ -150,7 +150,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input  id={`giam-nam-${index}-${index2}`} onChange={() => onChangeInput("Giải năm", index, index2, `giam-nam-${index}-${index2}`)}  type='text' defaultValue={item2} className={`bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input  id={`giam-nam-${index}-${index2}`} onInput={() => onChangeInput("Giải năm", index, index2, `giam-nam-${index}-${index2}`)}  type='text' defaultValue={item2} className={`bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
                                             )
                                         })
                                     }
@@ -175,7 +175,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input id={`giam-tu-${index}-${index2}`} onChange={() => onChangeInput("Giải tư", index, index2, `giam-tu-${index}-${index2}`)}  type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-b-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input id={`giam-tu-${index}-${index2}`} onInput={() => onChangeInput("Giải tư", index, index2, `giam-tu-${index}-${index2}`)}  type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-b-[1px] border-[#0000001a]`} key={index2}/>
                                                 
                                             )
                                         })
@@ -201,7 +201,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input id={`giam-ba-${index}-${index2}`} onChange={() => onChangeInput("Giải ba", index, index2, `giam-ba-${index}-${index2}`)}  type='text' defaultValue={item2} className={`bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-b-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input id={`giam-ba-${index}-${index2}`} onInput={() => onChangeInput("Giải ba", index, index2, `giam-ba-${index}-${index2}`)}  type='text' defaultValue={item2} className={`bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-b-[1px] border-[#0000001a]`} key={index2}/>
                                             )
                                         })
                                     }
@@ -226,7 +226,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input id={`giam-nhi-${index}-${index2}`} onChange={() => onChangeInput("Giải nhì", index, index2, `giam-nhi-${index}-${index2}`)}  type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input id={`giam-nhi-${index}-${index2}`} onInput={() => onChangeInput("Giải nhì", index, index2, `giam-nhi-${index}-${index2}`)}  type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
                                             )
                                         })
                                     }
@@ -251,7 +251,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input id={`giam-nhat-${index}-${index2}`} onChange={() => onChangeInput("Giải nhất", index, index2, `giam-nhat-${index}-${index2}`)}  type='text' defaultValue={item2} className={`bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input id={`giam-nhat-${index}-${index2}`} onInput={() => onChangeInput("Giải nhất", index, index2, `giam-nhat-${index}-${index2}`)}  type='text' defaultValue={item2} className={`bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
                                             )
                                         })
                                     }
@@ -276,7 +276,7 @@ const XoSoMienInput = (props) => {
                                                 // <div className="flex w-full items-center justify-center text-[#ec222c] max-[400px]:text-[20px]" key={index2}>
                                                 //     {item2}
                                                 // </div>
-                                                <input id={`giam-dac-biet-${index}-${index2}`} onChange={() => onChangeInput("Giải đặc biệt", index, index2, `giam-dac-biet-${index}-${index2}`)}  type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
+                                                <input id={`giam-dac-biet-${index}-${index2}`} onInput={() => onChangeInput("Giải đặc biệt", index, index2, `giam-dac-biet-${index}-${index2}`)}  type='text' defaultValue={item2} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[1px] border-[#0000001a]`} key={index2}/>
                                             )
                                         })
                                     }

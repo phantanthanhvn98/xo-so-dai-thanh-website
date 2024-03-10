@@ -1,4 +1,5 @@
 import { Content } from '@/components/api/content/content';
+import Component from '@/components/component/component';
 import Layout from '@/components/layout/layout';
 import XoSoMienBac from '@/components/result/xosomienbac/xosomienbac';
 import { Metadata } from 'next';
@@ -14,7 +15,7 @@ const XoSoMienBacPage = async () => {
   const data = (await contentService.getKetQuaMien("Miền Bắc", "latest", 3)).data
   return (
     <Layout>
-      {
+      {/* {
         <div className='flex flex-col gap-4'>
           {
             Object.keys(data).map((item, index) => {
@@ -22,7 +23,8 @@ const XoSoMienBacPage = async () => {
             })
           }
         </div>
-      }
+      } */}
+      <Component vung="Miền Bắc" code="MB" ketqua={data}/>
     </Layout>
   );
 };

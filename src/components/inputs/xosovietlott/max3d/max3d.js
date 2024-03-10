@@ -49,7 +49,7 @@ const Max3dInput = (props) => {
                                     // <div className='flex items-center justify-center' key={index}>
                                     //     {item}
                                     // </div>
-                                    <input id={`giai-db-${index}`} onChange={() => onChangeInput("Giải đặc biệt", index, `giai-db-${index}`)} defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6]' key={index}/>
+                                    <input id={`giai-db-${index}`} onInput={() => onChangeInput("Giải đặc biệt", index, `giai-db-${index}`)} defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6]' key={index}/>
                                 )
                             })
                         }
@@ -66,7 +66,7 @@ const Max3dInput = (props) => {
                                     // <div className='flex items-center justify-center' key={index}>
                                     //     {item}
                                     // </div>
-                                    <input id={`giai-nhat-${index}`} onChange={() => onChangeInput("Giải nhất", index, `giai-nhat-${index}`)} defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] bg-[#e7f5f2]' key={index}/>
+                                    <input id={`giai-nhat-${index}`} onInput={() => onChangeInput("Giải nhất", index, `giai-nhat-${index}`)} defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] bg-[#e7f5f2]' key={index}/>
                                 )
                             })
                         }
@@ -83,7 +83,7 @@ const Max3dInput = (props) => {
                                     // <div className='flex items-center justify-center' key={index}>
                                     //     {item}
                                     // </div>
-                                    <input id={`giai-nhi-${index}`} onChange={() => onChangeInput("Giải nhì", index, `giai-nhi-${index}`)} defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] ' key={index}/>
+                                    <input id={`giai-nhi-${index}`} onInput={() => onChangeInput("Giải nhì", index, `giai-nhi-${index}`)} defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] ' key={index}/>
                                 )
                             })
                         }
@@ -100,7 +100,7 @@ const Max3dInput = (props) => {
                                     // <div className='flex items-center justify-center' key={index}>
                                     //     {item}
                                     // </div>
-                                    <input id={`giai-ba-${index}`} onChange={() => onChangeInput("Giải ba", index, `giai-ba-${index}`)} defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] bg-[#e7f5f2]' key={index}/>
+                                    <input id={`giai-ba-${index}`} onInput={() => onChangeInput("Giải ba", index, `giai-ba-${index}`)} defaultValue={item} className='flex font-[700] text-center focus:outline-none border-[1px] border-[#e6e6e6] bg-[#e7f5f2]' key={index}/>
                                 )
                             })
                         }

@@ -107,13 +107,13 @@ const Login = (props) => {
                         <div className="text-[16px] font-[500]">
                             Tên Đăng Nhập
                         </div>
-                        <input defaultValue={userName} placeholder="Tên Đăng Nhập" className='text-[16px] font-[500] focus:outline-none p-2 rounded-[4px] hover:border-[#000] border-solid border-[1px] border-[#e6e6e6]' id="login-username" onChange={() => onChangeUserName()}/>
+                        <input defaultValue={userName} placeholder="Tên Đăng Nhập" className='text-[16px] font-[500] focus:outline-none p-2 rounded-[4px] hover:border-[#000] border-solid border-[1px] border-[#e6e6e6]' id="login-username" onInput={() => onChangeUserName()}/>
                     </div>
                     <div className="flex flex-col gap-2">
                         <div className="text-[16px] font-[500]">
                             Mật Khẩu
                         </div>
-                        <input defaultValue={password} placeholder="Tên Đăng Nhập" className='text-[16px] font-[500] focus:outline-none p-2 rounded-[4px] hover:border-[#000] border-solid border-[1px] border-[#e6e6e6]' id="login-password" onChange={() => onChangePassword()}/>
+                        <input defaultValue={password} placeholder="Tên Đăng Nhập" className='text-[16px] font-[500] focus:outline-none p-2 rounded-[4px] hover:border-[#000] border-solid border-[1px] border-[#e6e6e6]' id="login-password" onInput={() => onChangePassword()}/>
                     </div>  
                     <div className='flex gap-3 items-center'>
                         <label className="switch">

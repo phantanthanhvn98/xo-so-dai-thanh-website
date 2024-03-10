@@ -2,6 +2,7 @@ import Layout from '@/components/layout/layout';
 import XoSoMien from '@/components/result/xosomien/xosomien';
 import { Content } from '@/components/api/content/content';
 import { Metadata } from 'next';
+import Component from '@/components/component/component';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
@@ -16,11 +17,12 @@ const XoSoMienTrungPage = async () => {
     <Layout>
       {
         <div className='flex flex-col gap-4'>
-          {
+          {/* {
             Object.keys(data).map((item, index) => {
               return <XoSoMien vung="Miền Trung" code="MT" ketqua={data[item]} key={index}/>
             })
-          }
+          } */}
+          <Component ketqua={data} vung="Miền Trung" code="MT"/>
         </div>
       }
     </Layout>

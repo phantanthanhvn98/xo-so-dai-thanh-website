@@ -47,7 +47,7 @@ const XoSoMienBacInput = (props) => {
                         ketqua.KetQua["Giải đặc biệt"][0]
                     }
                 </div> */}
-                <input id={`giat-db-0`} onChange={() => onChangeInput('Giải đặc biệt', 0, `giat-db-0`)} type='text' defaultValue={ketqua.KetQua["Giải đặc biệt"][0]} className='text-center flex focus:outline-none w-full items-center justify-center text-[32px] text-[#ec222c] font-[500] border-l-[1px] border-r-[1px] border-b-[#0000001a]'/>
+                <input id={`giat-db-0`} onInput={() => onChangeInput('Giải đặc biệt', 0, `giat-db-0`)} type='text' defaultValue={ketqua.KetQua["Giải đặc biệt"][0]} className='text-center flex focus:outline-none w-full items-center justify-center text-[32px] text-[#ec222c] font-[500] border-l-[1px] border-r-[1px] border-b-[#0000001a]'/>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a] bg-[#e7f5f2]'>
                 <div className='flex w-10 items-center justify-center text-[16px] text-[#000] font-[300] border-l-[1px] border-b-[#0000001a]'>
@@ -60,7 +60,7 @@ const XoSoMienBacInput = (props) => {
                                 // <div className='flex items-center justify-center' key={index}>
                                 //     {item}
                                 // </div>
-                                <input id={`giat-nhat-${index}`} onChange={() => onChangeInput('Giải nhất', index, `giat-nhat-${index}`)} type='text' defaultValue={item} className='bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center' key={index}/>
+                                <input id={`giat-nhat-${index}`} onInput={() => onChangeInput('Giải nhất', index, `giat-nhat-${index}`)} type='text' defaultValue={item} className='bg-[#e7f5f2] flex w-full focus:outline-none text-center items-center justify-center' key={index}/>
                             )
                         })
                     }
@@ -77,7 +77,7 @@ const XoSoMienBacInput = (props) => {
                                 // <div className={`flex items-center justify-center`} key={index}>
                                 //     {item}
                                 // </div>
-                                <input id={`giat-nhi-${index}`} onChange={() => onChangeInput('Giải nhì', index, `giat-nhi-${index}`)} type='text' defaultValue={item} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[${ index === 1 ? "0px" : "1px"}] border-[#0000001a]`} key={index}/>
+                                <input id={`giat-nhi-${index}`} onInput={() => onChangeInput('Giải nhì', index, `giat-nhi-${index}`)} type='text' defaultValue={item} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[${ index === 1 ? "0px" : "1px"}] border-[#0000001a]`} key={index}/>
                             )
                         })
                     }
@@ -94,7 +94,7 @@ const XoSoMienBacInput = (props) => {
                                 // <div className={`flex w-full items-center justify-center`} key={index}>
                                 //     {item}
                                 // </div>
-                                <input id={`giat-ba-${index}`} onChange={() => onChangeInput('Giải ba', index, `giat-ba-${index}`)} type='text' defaultValue={item} className={`flex w-full bg-[#e7f5f2] focus:outline-none text-center items-center justify-center border-solid border-r-[${ index === 2 || index ===5 ? "0px" : "1px"}] border-b-[${index < 3? "1px": "0px"}] border-[#0000001a]`}  key={index}/>
+                                <input id={`giat-ba-${index}`} onInput={() => onChangeInput('Giải ba', index, `giat-ba-${index}`)} type='text' defaultValue={item} className={`flex w-full bg-[#e7f5f2] focus:outline-none text-center items-center justify-center border-solid border-r-[${ index === 2 || index ===5 ? "0px" : "1px"}] border-b-[${index < 3? "1px": "0px"}] border-[#0000001a]`}  key={index}/>
                             )
                         })
                     }
@@ -111,7 +111,7 @@ const XoSoMienBacInput = (props) => {
                                 // <div className={`flex items-center justify-center`} key={index}>
                                 //     {item}
                                 // </div>
-                                <input id={`giat-tu-${index}`} onChange={() => onChangeInput('Giải tư', index, `giat-tu-${index}`)} type='text' defaultValue={item} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[${ index === 1 || index === 3 ? "0px" : "1px"}] border-b-[${index < 2? "1px": "0px"}] border-[#0000001a]`} key={index}/>
+                                <input id={`giat-tu-${index}`} onInput={() => onChangeInput('Giải tư', index, `giat-tu-${index}`)} type='text' defaultValue={item} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[${ index === 1 || index === 3 ? "0px" : "1px"}] border-b-[${index < 2? "1px": "0px"}] border-[#0000001a]`} key={index}/>
                             )
                         })
                     }
@@ -128,7 +128,7 @@ const XoSoMienBacInput = (props) => {
                                 // <div className={`flex items-center justify-center`} key={index}>
                                 //     {item}
                                 // </div>
-                                <input  id={`giat-nam-${index}`} onChange={() => onChangeInput('Giải năm', index, `giat-nam-${index}`)} type='text' defaultValue={item} className={`flex w-full bg-[#e7f5f2] focus:outline-none text-center items-center justify-center border-solid border-r-[${ index === 2 || index ===5 ? "0px" : "1px"}] border-b-[${index < 3? "1px": "0px"}] border-[#0000001a]`} key={index}/>
+                                <input  id={`giat-nam-${index}`} onInput={() => onChangeInput('Giải năm', index, `giat-nam-${index}`)} type='text' defaultValue={item} className={`flex w-full bg-[#e7f5f2] focus:outline-none text-center items-center justify-center border-solid border-r-[${ index === 2 || index ===5 ? "0px" : "1px"}] border-b-[${index < 3? "1px": "0px"}] border-[#0000001a]`} key={index}/>
                             )
                         })
                     }
@@ -145,7 +145,7 @@ const XoSoMienBacInput = (props) => {
                                 // <div className={`flex items-center justify-center`} key={index}>
                                 //     {item}
                                 // </div>
-                                <input id={`giat-sau-${index}`} onChange={() => onChangeInput('Giải sáu', index, `giat-sau-${index}`)} type='text' defaultValue={item} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[${ index < 2 ? "1px" : "0px"}] border-[#0000001a]`} key={index}/>
+                                <input id={`giat-sau-${index}`} onInput={() => onChangeInput('Giải sáu', index, `giat-sau-${index}`)} type='text' defaultValue={item} className={`flex w-full focus:outline-none text-center items-center justify-center border-solid border-r-[${ index < 2 ? "1px" : "0px"}] border-[#0000001a]`} key={index}/>
                             )
                         })
                     }
@@ -162,7 +162,7 @@ const XoSoMienBacInput = (props) => {
                                 // <div className={`flex items-center justify-center`} key={index}>
                                 //     {item}
                                 // </div>
-                                <input id={`giat-bay-${index}`} onChange={() => onChangeInput('Giải bảy', index, `giat-bay-${index}`)} type='text' defaultValue={item} className='flex w-full bg-[#e7f5f2] focus:outline-none text-center items-center justify-center border-r-[1px] border-b-[#0000001a]' key={index}/>
+                                <input id={`giat-bay-${index}`} onInput={() => onChangeInput('Giải bảy', index, `giat-bay-${index}`)} type='text' defaultValue={item} className='flex w-full bg-[#e7f5f2] focus:outline-none text-center items-center justify-center border-r-[1px] border-b-[#0000001a]' key={index}/>
                             )
                         })
                     }
