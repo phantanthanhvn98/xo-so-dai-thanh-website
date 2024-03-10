@@ -7,6 +7,7 @@ import { Content } from "@/components/api/content/content";
 import XoSoMienNamTinh from '@/components/result/xosomiennam/xosomiennamtinh'
 import XoSoMienBac from "@/components/result/xosomienbac/xosomienbac";
 import ComponentTinh from "@/components/component/tinh/component";
+import { formatDateToDDMMYYYY } from "@/components/utils/utils";
  
 type Props = {
   params: { tinh: string }
@@ -34,7 +35,7 @@ export default async function KetQuaTinh ( { params } : any){
   if(!vung)
     redirect('/')
   const contentService = new Content()
-  const dataDate = (await contentService.getKetQuaTinh(vung, tinh, "09-03-2024", 7)).data
+  const dataDate = (await contentService.getKetQuaTinh(vung, tinh, formatDateToDDMMYYYY(new Date()), 7)).data
   
   return (
     <Layout>

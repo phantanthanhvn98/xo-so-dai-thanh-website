@@ -1,6 +1,7 @@
 import React from "react"
+import Link from "next/link"
 
-import {getDayOfWeekVN, parseDateFromDDMMYYYY, parseLive} from '@/components/utils/utils'
+import {getDayOfWeekVN, parseDateFromDDMMYYYY, parseLive, tinhToUrl} from '@/components/utils/utils'
 
 const XoSoMien = (props) => {
     const ketqua = props.ketqua
@@ -22,9 +23,11 @@ const XoSoMien = (props) => {
                     {
                         ketqua.map((item, index) => {
                             return (
-                                <div className='flex items-center justify-center border-l-[1px] border-b-[#0000001a] underline text-[#0029ad] max-[400px]:text-[13px]' key={index}>
-                                    {item.Tinh}
-                                </div>
+                                <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl({ten: item.Tinh})}.html`} key={index} prefetch={false}>
+                                    <div className='flex items-center justify-center border-l-[1px] border-b-[#0000001a] underline text-[#0029ad] max-[400px]:text-[13px]' key={index}>
+                                        {item.Tinh}
+                                    </div>
+                                </Link>
                             )
                         })
                     }

@@ -2,6 +2,7 @@
 import { Content } from "@/components/api/content/content"
 import XoSoMienBac from "@/components/result/xosomienbac/xosomienbac"
 import XoSoMienNamTinh from "@/components/result/xosomiennam/xosomiennamtinh"
+import { formatDateToDDMMYYYY } from "@/components/utils/utils"
 import React, { useEffect, useState } from "react"
 
 const ComponentTinh = (props: any) => {
@@ -26,7 +27,7 @@ const ComponentTinh = (props: any) => {
 
 
   const interVal = () => {
-    contentService.getKetQuaTinh(vung, tinh, "09-03-2024", 7).then((item: any) =>{
+    contentService.getKetQuaTinh(vung, tinh, formatDateToDDMMYYYY(new Date()), 7).then((item: any) =>{
           if(localStorage.getItem("DATA") !== JSON.stringify(item.data)){
             const audio = new Audio("ten.m4a")
             audio.volume = 0.5
