@@ -1,7 +1,7 @@
 import { Content } from '@/components/api/content/content';
 import Component from '@/components/component/component';
 import Layout from '@/components/layout/layout';
-import XoSoMienBac from '@/components/result/xosomienbac/xosomienbac';
+import { unstable_noStore as noStore } from 'next/cache';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const XoSoMienBacPage = async () => {
+  noStore();
   const contentService = new Content()
   const data = (await contentService.getKetQuaMien("Miền Bắc", "latest", 3)).data
   return (

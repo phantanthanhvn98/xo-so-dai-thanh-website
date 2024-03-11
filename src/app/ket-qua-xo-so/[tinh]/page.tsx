@@ -1,11 +1,9 @@
 import Layout from "@/components/layout/layout";
 import type { Metadata } from 'next'
-
+import { unstable_noStore as noStore } from 'next/cache';
 import { codeTinh, mienByTinh } from '@/assets/utils/constants'
 import { redirect } from 'next/navigation'
 import { Content } from "@/components/api/content/content";
-import XoSoMienNamTinh from '@/components/result/xosomiennam/xosomiennamtinh'
-import XoSoMienBac from "@/components/result/xosomienbac/xosomienbac";
 import ComponentTinh from "@/components/component/tinh/component";
 import { formatDateToDDMMYYYY } from "@/components/utils/utils";
  
@@ -17,7 +15,6 @@ export async function generateMetadata(
   { params }: Props
 ): Promise<Metadata> {
   // read route params
-  //ket-qua-xo-so-tay-ninh-70.html
   const splits= params.tinh.split("-")
   const code = splits[splits.length -1].split(".")[0]
   const tinh = (codeTinh as any)[code]
@@ -28,6 +25,7 @@ export async function generateMetadata(
 }
 
 export default async function KetQuaTinh ( { params } : any){
+  noStore();
   const splits= params.tinh.split("-")
   const code = splits[splits.length -1].split(".")[0]
   const tinh = (codeTinh as any)[code]

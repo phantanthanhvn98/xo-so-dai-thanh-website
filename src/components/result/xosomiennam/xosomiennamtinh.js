@@ -20,7 +20,7 @@ const XoSoMienNamTinh = (props) => {
                 </div>
                 <div className='flex w-full items-center justify-center text-[32px] text-[#ec222c] font-[500] border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
-                        parseLive(ketqua.KetQua["Giải đặc biệt"][0])
+                        parseLive(ketqua.KetQua["Giải đặc biệt"][0], ketqua.KetQua["Giải đặc biệt"], ketqua.KetQua["Giải nhất"])
                     }
                 </div>
             </div>
@@ -33,7 +33,7 @@ const XoSoMienNamTinh = (props) => {
                         ketqua.KetQua["Giải nhất"].map((item, index) => {
                             return (
                                 <div className='flex items-center justify-center' key={index}>
-                                    {parseLive(item)}
+                                    {parseLive(item, ketqua.KetQua["Giải nhất"], ketqua.KetQua['Giải nhì'])}
                                 </div>
                             )
                         })
@@ -49,7 +49,7 @@ const XoSoMienNamTinh = (props) => {
                         ketqua.KetQua["Giải nhì"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {parseLive(item)}
+                                    {parseLive(item, ketqua.KetQua["Giải nhì"], ketqua.KetQua["Giải ba"])}
                                 </div>
                             )
                         })
@@ -65,7 +65,7 @@ const XoSoMienNamTinh = (props) => {
                         ketqua.KetQua["Giải ba"].map((item, index) => {
                             return (
                                 <div className={`flex w-full items-center justify-center`} key={index}>
-                                    {parseLive(item)}
+                                    {parseLive(item, ketqua.KetQua["Giải ba"], ketqua.KetQua["Giải tư"])}
                                 </div>
                             )
                         })
@@ -81,7 +81,7 @@ const XoSoMienNamTinh = (props) => {
                         ketqua.KetQua["Giải tư"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`}  style={index == 6 ? {gridColumn: "1/4"} : {}} key={index}>
-                                    {parseLive(item)}
+                                    {parseLive(item, ketqua.KetQua["Giải tư"], ketqua.KetQua["Giải năm"])}
                                 </div>
                             )
                         })
@@ -97,7 +97,7 @@ const XoSoMienNamTinh = (props) => {
                         ketqua.KetQua["Giải năm"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {parseLive(item)}
+                                    {parseLive(item, ketqua.KetQua["Giải năm"], ketqua.KetQua["Giải sáu"])}
                                 </div>
                             )
                         })
@@ -113,7 +113,7 @@ const XoSoMienNamTinh = (props) => {
                         ketqua.KetQua["Giải sáu"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {parseLive(item)}
+                                    {parseLive(item, ketqua.KetQua["Giải sáu"], ketqua.KetQua["Giải bảy"])}
                                 </div>
                             )
                         })
@@ -129,7 +129,7 @@ const XoSoMienNamTinh = (props) => {
                         ketqua.KetQua["Giải bảy"].map((item, index) => {
                             return (
                                 <div className={`flex items-center justify-center`} key={index}>
-                                    {parseLive(item)}
+                                    {parseLive(item, ketqua.KetQua["Giải bảy"], ketqua.KetQua["Giải tám"])}
                                 </div>
                             )
                         })
@@ -142,7 +142,7 @@ const XoSoMienNamTinh = (props) => {
                 </div>
                 <div className='flex w-full items-center justify-center text-[32px] text-[#ec222c] font-[500] border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
-                        parseLive(ketqua.KetQua["Giải tám"][0])
+                        parseLive(ketqua.KetQua["Giải tám"][0], ketqua.KetQua["Giải tám"], [''])
                     }
                 </div>
             </div>

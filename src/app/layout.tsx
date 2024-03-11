@@ -26,7 +26,8 @@ export const metadata: Metadata = {
     images: [logo.src],
     countryName: "Việt Nam",
 
-  }
+  },
+  icons: "./favicon.ico"
 };
 
 const script1 = {
@@ -181,6 +182,7 @@ const script6 = {
   ]
 }
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -189,7 +191,7 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html lang="vi">
-        <meta name="theme-color" content="#fff" />
+        <meta name="google-adsense-account" content="ca-pub-9196083901151422"></meta>
         <body className={lexend.className}>
           {children}
           <ToastContainer theme="dark"/>

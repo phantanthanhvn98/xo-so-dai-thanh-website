@@ -87,4 +87,43 @@
     transform: rotate(330deg) translate(0, -130%);
     animation-delay: -0.1s;
   }
-  
+
+.live-gif {
+  width: 25px;
+  height: 25px;
+  /* width: 100vw;
+  height: 100vh; */
+  /* background-size: cover;
+  background-position: center; */
+  animation: changeBackground 2s infinite;
+  background-size: cover;
+  background-position: center; 
+}
+.live-gif-ball{
+  width: 24px;
+  height: 24px;
+  animation: changeBall 2s infinite;
+  background-size: cover;
+  background-position: center; 
+}
+@keyframes changeBackground {
+
+  0%, 100% { background-image: url('../../assets/images/live/ball-10.png'); }
+
+  60% { background-image: url('../../assets/images/live/ball-11.png'); } 
+
+  90% { background-image: url('../../assets/images/live/ball-12.png'); }
+}
+
+@keyframes changeBall {
+  0%, 100% { background-image: url('../../assets/images/live/ball-01.png'); }
+  10% { background-image: url('../../assets/images/live/ball-02.png'); }
+  20% { background-image: url('../../assets/images/live/ball-03.png'); }
+  30% { background-image: url('../../assets/images/live/ball-04.png'); }
+  40% { background-image: url('../../assets/images/live/ball-05.png'); }
+  50% { background-image: url('../../assets/images/live/ball-06.png'); }
+  60% { background-image: url('../../assets/images/live/ball-07.png'); }
+  70% { background-image: url('../../assets/images/live/ball-08.png'); }
+  80% { background-image: url('../../assets/images/live/ball-09.png'); }
+  90% { background-image: url('../../assets/images/live/ball-10.png'); }
+}

@@ -1,5 +1,6 @@
 // 'use client'
 import React, { useState } from 'react';
+import { unstable_noStore as noStore } from 'next/cache';
 import Layout from '@/components/layout/layout';
 import Mega645 from '@/components/result/vietlott/mega645/mega645'
 import Mega655 from '@/components/result/vietlott/mega655/mega655'
@@ -34,6 +35,7 @@ const vietlott  = [
 
 const XoSoVietlott = async () => {
   // const [tab, setTab] = useState(0)
+  noStore();
   const contentService = new Content()
   const dataDate = (await contentService.getKetQuaMien("Vietlott", 'latest', 3)).data
   return (

@@ -46,7 +46,8 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải tám"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center text-[#ec222c] max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, [item2], ['giai-dau'])}
+                                                    
                                                 </div>
                                             )
                                         })
@@ -70,7 +71,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải bảy"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, item.KetQua["Giải bảy"], item.KetQua["Giải tám"])}
                                                 </div>
                                             )
                                         })
@@ -94,7 +95,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải sáu"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, item.KetQua["Giải sáu"], item.KetQua["Giải bảy"])}
                                                 </div>
                                             )
                                         })
@@ -118,7 +119,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải năm"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, item.KetQua["Giải năm"], item.KetQua["Giải sáu"])}
                                                 </div>
                                             )
                                         })
@@ -142,7 +143,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải tư"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, item.KetQua["Giải tư"], item.KetQua["Giải năm"])}
                                                 </div>
                                             )
                                         })
@@ -166,7 +167,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải ba"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, item.KetQua["Giải ba"], item.KetQua["Giải tư"])}
                                                 </div>
                                             )
                                         })
@@ -190,7 +191,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải nhì"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, item.KetQua["Giải nhì"], item.KetQua["Giải ba"])}
                                                 </div>
                                             )
                                         })
@@ -214,7 +215,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải nhất"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, item.KetQua["Giải nhất"], item.KetQua["Giải nhì"])}
                                                 </div>
                                             )
                                         })
@@ -238,7 +239,7 @@ const XoSoMien = (props) => {
                                         item.KetQua["Giải đặc biệt"].map((item2, index2 ) => {
                                             return (
                                                 <div className="min-h-[39px] flex w-full items-center justify-center text-[#ec222c] max-[400px]:text-[20px]" key={index2}>
-                                                    {parseLive(item2)}
+                                                    {parseLive(item2, item.KetQua["Giải đặc biệt"], item.KetQua["Giải nhất"])}
                                                 </div>
                                             )
                                         })
