@@ -50,7 +50,7 @@ const LiveAnnouncement = () => {
                         { `>>  Trực Tiếp Xổ Số Miền Bắc `}
                         <div>
                             {
-                                getStatusByTime(startMienTrung, endMienTrung)
+                                getStatusByTime(startMienBac, endMienBac)
                             }
                         </div>
                     </div>

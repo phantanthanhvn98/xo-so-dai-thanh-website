@@ -8,12 +8,12 @@ const XoSoMien = (props) => {
     return (
         <div className="bg-[#fff] w-full">
             <div className='bg-[#f1bd2166]'>
-                <div className='flex items-center justify-center text-[20px] max-md:text-[16px] text-[#ec222c] font-[500]'>
+                <h1 className='flex items-center justify-center text-[20px] max-md:text-[16px] text-[#ec222c] font-[500]'>
                     {`KQXS ${props.vung} ( KQXS ${props.code})`}
-                </div>
-                <div className='flex items-center justify-center text[16px] max-md:text-[13px] text-[#0073ea] font-[300]'>
+                </h1>
+                <h2 className='flex items-center justify-center text[16px] max-md:text-[13px] text-[#0073ea] font-[300]'>
                     {`XS${props.code} / XS${props.code} ${getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua[0].Ngay))} / XS${props.code} ${ketqua[0].Ngay.replaceAll("-", "/")}`}
-                </div>
+                </h2>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
                 <div className='flex w-10 items-center justify-center text-[16px] max-[400px]:text-[14px] text-[#000] font-[300] border-l-[1px] border-b-[#0000001a]'>

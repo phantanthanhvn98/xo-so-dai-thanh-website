@@ -33,7 +33,7 @@ const ComponentLive = (props: any) => {
 
 
     const interVal = () => {
-        contentService.getKetQuaMien(vung, "latest", 1).then((item: any) =>{
+        contentService.getKetQuaMien(vung, "latest", 0).then((item: any) =>{
             if(localStorage.getItem("DATA") !== JSON.stringify(item.data)){
                 const audio = new Audio("ten.m4a")
                 audio.volume = 0.5

@@ -6,8 +6,11 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
-  title: "Xổ Số Đại Thành - Kết quả Xổ Số Miền Bắc - Xổ Số Miền Bắc - XSMB - Xổ Số MB - KQXS MB",
+  title: "Xổ Số Đại Thành - Xổ Số Miền Bắc - XSMB - Xổ Số MB - KQXS MB",
   description: "Cập Nhật KQXS Miền Bắc, XSMB, Xổ Số Miền Bắc Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
+  keywords:[
+    'xo so mien bac', 'xosomienbac', 'xsmb', 'xs mien bac', 'xo so mb', 'kqxs mb', 'kqxsmb', 'xsmb hom nay', 'xs mb hom nay'
+  ]
 };
 
 const XoSoMienBacPage = async () => {

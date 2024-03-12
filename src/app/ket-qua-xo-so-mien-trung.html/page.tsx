@@ -6,8 +6,11 @@ import Component from '@/components/component/component';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
-  title: "Xổ Số Đại Thành - Kết quả Xổ Số Miền Trung - Xổ Số Miền Trung - XSMT - Xổ Số MT - KQXS MT",
+  title: "Xổ Số Đại Thành - Xổ Số Miền Trung - XSMT - Xổ Số MT - KQXS MT",
   description: "Cập Nhật KQXS Miền Trung, XSMT, Xổ Số Miền Trung Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
+  keywords:[
+    'xo so mien trung', 'xosomientrung', 'xsmt', 'xs mien trung', 'xo so mt', 'kqxs mt', 'kqxsmt', 'xsmt hom nay', 'xs mt hom nay'
+  ]
 };
 
 const XoSoMienTrungPage = async () => {

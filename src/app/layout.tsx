@@ -12,7 +12,7 @@ const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
-  title: "Xổ Số Đại Thành - Kết Quả Xổ Số 3 Miến - Kết quả Xổ Số Miền Bắc - Kết quả Xổ Số Miền Trung - Kết quả Xổ Số Miền Nam - Kết Quả Xổ Số Hôm Nay",
+  title: "Xổ Số Đại Thành - Kết Quả Xổ Số Nam Trung Bắc nhanh và chính xác",
   description: "Xổ Số Đại Thành, Cập Nhật KQXS 3 Miền Bắc, Trung, Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
   authors: [{
     url: 'https://xosodaithanh.vn',
@@ -27,7 +27,8 @@ export const metadata: Metadata = {
     countryName: "Việt Nam",
 
   },
-  icons: "./favicon.ico"
+  icons: "./favicon.ico",
+  keywords: ["xosodaithanh", 'xsmn', 'xsmt', 'xsmb', 'xosomn', 'xosomientrung', 'xosomienbac', 'xosohomnay', 'xosotructiep', 'kqxs', 'ketquaxoso']
 };
 
 const script1 = {
@@ -191,6 +192,12 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html lang="vi">
+        <link
+          rel="canonical"
+          href="https://xosodaithanh.vn/"
+          key="canonical"
+        />
+        <meta name="robots" content="all" />
         <meta name="google-adsense-account" content="ca-pub-9196083901151422"></meta>
         <body className={lexend.className}>
           {children}

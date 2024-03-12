@@ -1,0 +1,25 @@
+.lich-quay-thuong{
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+}
+.lich-quay-thuong > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 4px;
+    gap: 4px;
+
+    cursor: pointer;
+}
+.lich-quay-thuong > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 4px;
+    gap: 4px;
+
+    cursor: pointer;
+}

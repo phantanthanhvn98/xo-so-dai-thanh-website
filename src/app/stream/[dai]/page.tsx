@@ -20,6 +20,10 @@ const Stream = async ({params}: any) => {
         code = "MB"
     }
     const data = (await contentService.getKetQuaMien(vung, "latest", 1)).data
+    const key:string = Object.keys(data)[0]
+    const item:Record<string, any> = {}
+    item[key as string] = data[key]
+
     return (
           <div className='flex flex-col gap-4 pl-4 pr-4'>
             <div className='flex items-center justify-between'>
@@ -33,7 +37,7 @@ const Stream = async ({params}: any) => {
                     {`Bảng KQXS ${vung} Ngày ${Object.keys(data)[0]}`}
                 </div>
             </div>
-            <ComponentLive ketqua={data} vung={vung} code={code}/>
+            <ComponentLive ketqua={item} vung={vung} code={code}/>
           </div>
     );
 }
