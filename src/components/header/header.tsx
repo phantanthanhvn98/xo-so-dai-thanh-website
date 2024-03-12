@@ -60,12 +60,12 @@ const Header = (props:any) => {
                 <div className="flex max-[1090px]:w-full justify-between pl-8 pr-8 pt-4 pb-4  max-[400px]:pt-2 max-[400px]:pb-2  max-[400px]:pl-4 max-[400px]:pr-4">
                     <div className=" flex items-center min-[1090px]:hidden cursor-pointer">
                         <Link href={"/ket-qua-xo-so-hom-nay.html"} prefetch={false}>
-                            <Image className="max-[400px]:w-5 max-[400px]:h-5" src={calendarLogo} alt="kết quả xổ số hôm nay"/>
+                            {/* <Image className="max-[400px]:w-5 max-[400px]:h-5" src={calendarLogo} alt="kết quả xổ số hôm nay"/> */}
                         </Link>
                     </div>
                     <Link href={"/"} prefetch={false}>
                         <div className="flex gap-8 items-center">
-                            <Image className="w-24 max-[400px]:w-16 h-12 max-[400px]:h-8" src={logo} alt="xổ số hôm nay xổ số miền bắc xổ số miền nam xổ số miền trunvg"/>
+                            <Image className="w-24 max-[400px]:w-16 h-14 max-[400px]:h-9" src={logo} alt="xổ số hôm nay xổ số miền bắc xổ số miền nam xổ số miền trunvg"/>
                         </div>
                     </Link>
                     <div className="flex items-center" onClick={() => setOpen(!open)}>

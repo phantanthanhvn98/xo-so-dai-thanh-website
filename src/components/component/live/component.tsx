@@ -2,11 +2,11 @@
 import React
 , { useEffect,
 useState } from "react";
-import { Content } from "../api/content/content";
-import XoSoMienBac from "../result/xosomienbac/xosomienbac";
-import XoSoMien from "../result/xosomien/xosomien";
+import { Content } from "../../api/content/content";
+import XoSoMienBacLive from "@/components/live/live/xosomienbac";
+import XoSoMienLive from "@/components/live/live/xosomien";
 
-const Component = (props: any) => {
+const ComponentLive = (props: any) => {
     const contentService = new Content("https://api.xosodaithanh.vn")
     const [ketqua, setKetQua] = useState<any>(props.ketqua)
     const [id, setId] = useState<any>()
@@ -33,7 +33,7 @@ const Component = (props: any) => {
 
 
     const interVal = () => {
-        contentService.getKetQuaMien(vung, "latest", 3).then((item: any) =>{
+        contentService.getKetQuaMien(vung, "latest", 1).then((item: any) =>{
             if(localStorage.getItem("DATA") !== JSON.stringify(item.data)){
                 const audio = new Audio("ten.m4a")
                 audio.volume = 0.5
@@ -48,14 +48,14 @@ const Component = (props: any) => {
         <div className='flex flex-col gap-4'>
             {code ==="MB"?
                 Object.keys(ketqua).map((item, index) => {
-                    return <XoSoMienBac vung="Miền Bắc" code="MB" ketqua={ketqua[item]} key={index}/>
+                    return <XoSoMienBacLive vung="Miền Bắc" code="MB" ketqua={ketqua[item]} key={index}/>
                 })
                 :<></>
             }
             {
                 code !== "MB" ?
                 Object.keys(ketqua).map((item, index) => {
-                return <XoSoMien vung={vung}code={code} ketqua={ketqua[item]} key={index}/>
+                return <XoSoMienLive vung={vung}code={code} ketqua={ketqua[item]} key={index}/>
                 })
                 : <></>
             }
@@ -63,4 +63,4 @@ const Component = (props: any) => {
     )
 }
 
-export default Component;
+export default ComponentLive;

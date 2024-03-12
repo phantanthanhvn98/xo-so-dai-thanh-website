@@ -15,7 +15,7 @@ const ComponentTinh = (props: any) => {
       localStorage.setItem("DATA", ketqua)
       const mien = ketqua[0].KetQua["Giải đặc biệt"][0] === ""
       if(mien)
-          setId(setInterval(interVal, 15000))
+          setId(setInterval(interVal, 5000))
   }, [])
 
   useEffect(() => {

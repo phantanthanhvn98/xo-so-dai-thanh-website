@@ -32,7 +32,7 @@ const Admin = () => {
     const vietlottRule = vietlottCalendar[dayOfWeekVN]
     return (
         <Layout login={true}>
-            <div className='flex flex-col w-full gap-4 max-[768px]:w-[calc(100%)] min-[1440px]:w-[calc(792px-5rem)]'>
+            <div className='flex flex-col w-full gap-4'>
                 <div className='flex w-full justify-between text-[#fff] bg-[#fff]'>
                     {
                         channel.map((item, index) => {

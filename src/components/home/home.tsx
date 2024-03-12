@@ -22,7 +22,7 @@ const HomePage = (props:any) => {
             return item.KetQua["Giải đặc biệt"][0] === ""
         })
         if(nam.includes(true) || trung.includes(true) || bac.includes(true))
-            setId(setInterval(interVal, 15000))
+            setId(setInterval(interVal, 5000))
     }, [])
 
     useEffect(() => {

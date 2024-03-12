@@ -71,18 +71,18 @@ export function parseLive(item, itempa, pre) {
     if(pre.includes(''))
         return (
             <div className="loader">
-            <div className="bar1"></div>
-            <div className="bar2"></div>
-            <div className="bar3"></div>
-            <div className="bar4"></div>
-            <div className="bar5"></div>
-            <div className="bar6"></div>
-            <div className="bar7"></div>
-            <div className="bar8"></div>
-            <div className="bar9"></div>
-            <div className="bar10"></div>
-            <div className="bar11"></div>
-            <div className="bar12"></div>
+              <div className="bar1"></div>
+              <div className="bar2"></div>
+              <div className="bar3"></div>
+              <div className="bar4"></div>
+              <div className="bar5"></div>
+              <div className="bar6"></div>
+              <div className="bar7"></div>
+              <div className="bar8"></div>
+              <div className="bar9"></div>
+              <div className="bar10"></div>
+              <div className="bar11"></div>
+              <div className="bar12"></div>
             </div>
         );
     if(itempa.includes(''))
@@ -91,4 +91,33 @@ export function parseLive(item, itempa, pre) {
               <div className="live-gif-ball" />
             </div>
         );
+}
+
+export function getStatus(status){
+  if(status === 0)
+    return (
+      <div className="loader">
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+        <div className="bar4"></div>
+        <div className="bar5"></div>
+        <div className="bar6"></div>
+        <div className="bar7"></div>
+        <div className="bar8"></div>
+        <div className="bar9"></div>
+        <div className="bar10"></div>
+        <div className="bar11"></div>
+        <div className="bar12"></div>
+      </div>)
+  else if(status === 1)
+      return (
+        <div className="live-gif">
+            <div className="live-gif-ball" />
+        </div>
+    )
+    else
+        return (
+            <div>✅</div>
+    )
 }

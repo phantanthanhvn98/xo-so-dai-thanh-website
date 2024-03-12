@@ -218,6 +218,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.88
     },
+    //tới đây, thêm nữa vào ngày mai
     {
       url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-tien-giang-63.html',
       lastModified: new Date(),
