@@ -20,7 +20,7 @@ const AboutUs = () => {
                     </Link>
                     <Link href="/chinh-sach" prefetch={false}>
                         <div className="flex">
-                            { `>> Chính Sách`}
+                            { `>> Chính Sách Bảo Mật`}
                         </div>
                     </Link>
                     <Link href="/lien-he" prefetch={false}>

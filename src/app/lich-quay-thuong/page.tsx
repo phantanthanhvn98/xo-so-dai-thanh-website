@@ -145,6 +145,20 @@ const LichQuayThuong = () => {
                     })
                 }
             </div>
+            <div className="flex flex-col gap-4">
+                    <div className="font-[500]">
+                        Qui Định Về Vé Số Trúng Giải
+                    </div>
+                    <div className="text-[14px]">
+                        1. Vé số trúng giải là những vé có dãy số dự thưởng trùng với các con số trên bảng kết quả theo thứ tự hàng, vé sai một số so với giải Đặc Biệt (vé số Miền Nam và Miền Trung), vé có 2 số cuối trùng với 2 số cuối giải Đặc Biệt đối với vé số Miền Bắc.
+                    </div>
+                    <div className="text-[14px]">
+                        2. Vé số trúng phải còn nguyên hình, nguyên số, không rách rời và không cạo sửa.
+                    </div>
+                    <div className="text-[14px]">
+                        3. Vé số trúng có giá trị lãnh thưởng trong thời hạn trả thưởng qui định. (30 ngày)
+                    </div>
+                </div>
         </Layout>
     )
 }
