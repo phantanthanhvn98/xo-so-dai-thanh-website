@@ -15,7 +15,7 @@ const XoSoMienBacLive = (props:any) => {
                 </div> */}
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
-                <div className='flex w-10 items-center justify-center min-w-32 text-[38px] font-[500] border-l-[1px] border-b-[#0000001a]'>
+                <div className='flex w-10 items-center justify-center min-w-32 text-[38px] text-[#ec2222c] font-[500] border-l-[1px] border-b-[#0000001a]'>
                     ĐB
                 </div>
                 <div className='flex w-full text-[85px] font-[500] min-h-20 items-center justify-center text-[#ec222c] border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
@@ -26,7 +26,7 @@ const XoSoMienBacLive = (props:any) => {
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a] bg-[#e7f5f2]'>
                 <div className='flex w-10 items-center justify-center min-w-32 text-[38px] font-[500] border-l-[1px] border-b-[#0000001a]'>
-                    1
+                    G.1
                 </div>
                 <div className='flex w-full items-center justify-center text-[55px] font-[500] min-h-20 border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
@@ -42,7 +42,7 @@ const XoSoMienBacLive = (props:any) => {
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
                 <div className='flex w-10 items-center justify-center min-w-32 text-[38px] font-[500] border-l-[1px] border-b-[#0000001a]'>
-                    2
+                    G.2
                 </div>
                 <div className='grid grid-cols-2 w-full items-center justify-between text-[55px] font-[500] min-h-20  border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
@@ -58,7 +58,7 @@ const XoSoMienBacLive = (props:any) => {
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a] bg-[#e7f5f2]'>
                 <div className='flex w-10 items-center justify-center min-w-32 text-[38px] font-[500] border-l-[1px] border-b-[#0000001a]'>
-                    3
+                    G.3
                 </div>
                 <div className='grid grid-cols-3 w-full items-center justify-between text-[55px] font-[500] min-h-20  border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
@@ -74,7 +74,7 @@ const XoSoMienBacLive = (props:any) => {
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
                 <div className='flex w-10 items-center justify-center min-w-32 text-[38px] font-[500] border-l-[1px] border-b-[#0000001a]'>
-                    4
+                    G.4
                 </div>
                 <div className='grid grid-cols-2 w-full items-center justify-between text-[55px] font-[500] min-h-20  border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
@@ -90,7 +90,7 @@ const XoSoMienBacLive = (props:any) => {
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a] bg-[#e7f5f2]'>
                 <div className='flex w-10 items-center justify-center min-w-32 text-[38px] font-[500] border-l-[1px] border-b-[#0000001a]'>
-                    5
+                    G.5
                 </div>
                 <div className='grid grid-cols-3 w-full items-center justify-between text-[55px] font-[500] min-h-20  border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
@@ -106,7 +106,7 @@ const XoSoMienBacLive = (props:any) => {
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
                 <div className='flex w-10 items-center justify-center min-w-32 text-[38px] font-[500] border-l-[1px] border-b-[#0000001a]'>
-                    6
+                    G.6
                 </div>
                 <div className='grid grid-cols-3 w-full items-center justify-between text-[55px] font-[500] min-h-20  border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {
@@ -122,7 +122,7 @@ const XoSoMienBacLive = (props:any) => {
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a] bg-[#e7f5f2]'>
                 <div className='flex w-10 items-center justify-center min-w-32 text-[38px] font-[500] border-l-[1px] border-b-[#0000001a]'>
-                    7
+                    G.7
                 </div>
                 <div className='grid grid-cols-4 w-full items-center justify-between text-[55px] font-[500] min-h-20  border-l-[1px] border-r-[1px] border-b-[#0000001a]'>
                     {

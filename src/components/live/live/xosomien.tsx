@@ -221,7 +221,7 @@ const XoSoMienLive = (props: any) => {
                 </div>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
-                <div className='flex min-w-32 items-center justify-center text-[38px] font-[500]  border-l-[1px] border-b-[#0000001a]'>
+                <div className='flex min-w-32 items-center justify-center text-[38px] font-[500] text-[#ec222c] border-l-[1px] border-b-[#0000001a]'>
                     2TỶ
                 </div>
                 <div className={`grid grid-cols-${ketqua.length} w-full items-center justify-center text-[85px] text-[#000] font-[500] border-l-[1px] border-r-[1px] border-b-[#0000001a]`}>
