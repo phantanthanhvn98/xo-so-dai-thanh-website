@@ -2,6 +2,7 @@ import Layout from "@/components/layout/layout";
 import Image from 'next/image'
 
 import banner from '@/assets/images/banner.webp'
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://xosodaithanh.vn/'),
