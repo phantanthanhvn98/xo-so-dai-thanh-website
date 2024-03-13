@@ -6,8 +6,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://xosodaithanh.vn/'),
-    title: "Xổ Số Đại Thành - Giới Thiệu",
+    title: "Xổ Số Đại Thành - Chuyên công cấp Kết quả Xổ Số",
     description: "Cập Nhật KQXS Miền Nam, XSMN, Xổ Số Miền Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
+    keywords: ["xosodaithanh", 'xsmn', 'xsmt', 'xsmb', 'xosomn', 'xosomientrung', 'xosomienbac', 'xosohomnay', 'xosotructiep', 'kqxs', 'ketquaxoso',
+  "xổ số", "xo so", "kết quả xổ số", "ket qua xo so", "xổ số miền nam", "xo so mien nam", "xs mn", "xổ số miền bắc", "xổ số trực tiếp", "xo so truc tiep", "xổ số miền trung"]
   };
 
 const content = [
@@ -29,7 +31,7 @@ const content = [
         content: [
             "Chúng tôi tối ưu hóa nhất để có thể cung cấp tất cả kết quả xổ số 3 miền nhanh và chính xác nhất. XSMN, XSMB, XSMT sẽ đồng hành cùng chúng tôi trong toàn bộ thời gian chương trình trực tiếp",
             "Trực tiếp kết quả quay thưởng hằng ngày trên website và kênh youtube chính thức của công ty. Chúng tôi muốn mang đến trải nghiệm mượt mà và nhanh nhất cho quý khán giả. Xổ Số miền Nam( XSMN) sẽ được phát sáng vào luc lúc 16h15 đến 16h40. Xổ Số Miền Trung( XSMT) sẽ được trực tiếp vào lúc 17h10 đến 17h30 và Xổ số miền Bắc (XSMB) sẽ được lên sóng vào lúc 18h đến 18h20",
-            "Đại Thành với sự thấu hiểu đã có ra các bảng kết qua ả xổ số nhanh và chính xác đặc biệt là gọn gàng. Xổ Số 3 Miền sé có bẳng màu trắng ngà đẹp đẽ với niềm tin là mang đến sự thoải mái và hi hy vọng, niềm vui và cảm xúc khác nhau đối với hàng triệu người chơi. Trong không khí hứng khởi của sự đánh đề và dự đoán, trang web xổ số Đại Thành là địa điểm tin cậy để cập nhật ngay lập tức với kết quả xổ số miền Nam mỗi ngày."
+            "Đại Thành với sự thấu hiểu đã có ra các bảng kết qua ả xổ số nhanh và chính xác đặc biệt là gọn gàng. Xổ Số 3 Miền sé có bẳng màu đẹp mắt với niềm tin là mang đến sự thoải mái và hi hy vọng, niềm vui và cảm xúc khác nhau đối với hàng triệu người chơi. Trong không khí hứng khởi của sự đánh đề và dự đoán, trang web xổ số Đại Thành là địa điểm tin cậy để cập nhật ngay lập tức với kết quả xổ số miền Nam mỗi ngày."
         ]
     },
     {
@@ -61,14 +63,17 @@ const content = [
 const GioiThieu = () => {
     return (
         <Layout>
+            <h1 className="text-[24px] font-[500] flex items-center justify-center">
+                Đại Thành - Nơi May Mắn Khởi Đầu 
+            </h1>
             <div className="">
                 {
                     content.map((item:any, index:number) => {
                         return (
                             <div className="flex flex-col gap-4" key={index}>
-                                <div className="flex items-center justify-center text-center text-[24px] font-[500]">
+                                <h2 className="flex items-center justify-center text-center text-[24px] font-[500]">
                                     {item.title}
-                                </div>
+                                </h2>
                                 {
                                     item.type === 'image' ?
                                     <Image className='' src={banner} alt="banner xổ số đại thành, xổ số miền nam, bắc trung"/>

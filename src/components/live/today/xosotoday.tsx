@@ -39,7 +39,7 @@ const XoSoToDay = (props: any) => {
                     <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
                     <div className="flex cursor-pointer items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad] font-[500] border-[1px] border-solid border-[#b9b9b9]" key={index}>
                         {
-                        item.ten
+                            item.ten
                         }
                     </div>
                     </Link>
@@ -52,7 +52,7 @@ const XoSoToDay = (props: any) => {
                     <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
                     <div className="flex cursor-pointer items-center pl-3 text-[16px] max-[400px]:text-[14px] text-[#0029ad]  font-[500] border-[1px] border-solid border-[#b9b9b9]" key={index}>
                         {
-                        item.ten
+                            item.ten
                         }
                     </div>
                     </Link>

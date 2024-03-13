@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Xổ Số Đại Thành - Xổ Số Miền Bắc - XSMB - Xổ Số MB - KQXS MB",
   description: "Cập Nhật KQXS Miền Bắc, XSMB, Xổ Số Miền Bắc Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
   keywords:[
-    'xo so mien bac', 'xosomienbac', 'xsmb', 'xs mien bac', 'xo so mb', 'kqxs mb', 'kqxsmb', 'xsmb hom nay', 'xs mb hom nay'
+    'trực tiếp xsmb', 'trực tiếp xổ số miền bắc', 'xổ số miền bắc', 'kết quả xổ số miền bắc', 'xo so mien bac', 'xosomienbac', 'xsmb', 'xs mien bac', 'xo so mb', 'kqxs mb', 'kqxsmb', 'xsmb hom nay', 'xs mb hom nay'
   ]
 };
 

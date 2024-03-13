@@ -36,7 +36,7 @@ const DaiYesterDay = (props: any) => {
                         <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
                         <div className="flex cursor-pointer items-center text-[15px] font-[700]" key={index}>
                             {
-                                `>> ${item.ten}`
+                                `>> Xổ số ${item.ten}`
                             }
                         </div>
                         </Link>
@@ -49,7 +49,7 @@ const DaiYesterDay = (props: any) => {
                         <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
                         <div className="flex cursor-pointer items-center text-[15px] font-[700]" key={index}>
                             {
-                                `>> ${item.ten}`
+                                `>> Xổ số ${item.ten}`
                             }
                         </div>
                         </Link>

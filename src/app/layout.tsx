@@ -28,7 +28,8 @@ export const metadata: Metadata = {
 
   },
   icons: "./favicon.ico",
-  keywords: ["xosodaithanh", 'xsmn', 'xsmt', 'xsmb', 'xosomn', 'xosomientrung', 'xosomienbac', 'xosohomnay', 'xosotructiep', 'kqxs', 'ketquaxoso']
+  keywords: ["xosodaithanh", 'xsmn', 'xsmt', 'xsmb', 'xosomn', 'xosomientrung', 'xosomienbac', 'xosohomnay', 'xosotructiep', 'kqxs', 'ketquaxoso',
+  "xổ số", "xo so", "kết quả xổ số", "ket qua xo so", "xổ số miền nam", "xo so mien nam", "xs mn", "xổ số miền bắc", "xổ số trực tiếp", "xo so truc tiep", "xổ số miền trung"]
 };
 
 const script1 = {

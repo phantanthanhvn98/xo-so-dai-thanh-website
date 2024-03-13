@@ -18,7 +18,7 @@ const AboutUs = () => {
                             { `>> Giới Thiệu` }
                         </div>
                     </Link>
-                    <Link href="/chinh-sach" prefetch={false}>
+                    <Link href="/chinh-sach-bao-mat" prefetch={false}>
                         <div className="flex">
                             { `>> Chính Sách Bảo Mật`}
                         </div>

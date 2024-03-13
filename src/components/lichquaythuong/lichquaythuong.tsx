@@ -1,18 +1,6 @@
-import Layout from "@/components/layout/layout"
-import './lichquaythuong.css'
 import Link from "next/link"
-import { tinhToUrl } from "@/components/utils/utils"
-import { Metadata } from "next";
+import { tinhToUrl } from "../utils/utils"
 
-export const metadata: Metadata = {
-    metadataBase: new URL('https://xosodaithanh.vn/'),
-    title: "Xổ Số Đại Thành - Lịch Xổ Số  - Lịch Quay Thưởng",
-    description: "Cập Nhật Lịch Quay Thưởng KQXS Miền Nam, XSMN, Xổ Số Miền Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
-    keywords:["xosodaithanh", 'xsmn', 'xsmt', 'xsmb', 'xosomn', 'xosomientrung', 'xosomienbac', 'xosohomnay', 'xosotructiep', 'kqxs', 'ketquaxoso',
-    "xổ số", "xo so", "kết quả xổ số", "ket qua xo so", "xổ số miền nam", "xo so mien nam", "xs mn", "xổ số miền bắc", "xổ số trực tiếp", "xo so truc tiep", "xổ số miền trung"
-    ]
-  };
-  
 const lichQuayThuong = [
     ["Khu vực", "Miền Nam", "Miền Trung", 'Miền Bắc'],
     ["Giờ Xổ số ", "16h15'>16h35'", "17h15'>17h35'", "18h15'>18h35'"],
@@ -105,10 +93,11 @@ const lichQuayThuong = [
     ]
 ]
 
-const LichQuayThuong = () => {
+
+const LichQuayThuongCO = () => {
     return (
-        <Layout>
-            <h1 className="text-[24px] font-[500] flex items-center justify-center">
+        <div>
+                        <h1 className="text-[24px] font-[500] flex items-center justify-center">
                 Lịch Quay Thưởng
             </h1>
             <div className="lich-quay-thuong grid grid-cols-4 text-[13px]">
@@ -161,8 +150,8 @@ const LichQuayThuong = () => {
                     3. Vé số trúng có giá trị lãnh thưởng trong thời hạn trả thưởng qui định. (30 ngày)
                 </div>
             </div>
-        </Layout>
+        </div>
     )
 }
 
-export default LichQuayThuong;
+export default LichQuayThuongCO

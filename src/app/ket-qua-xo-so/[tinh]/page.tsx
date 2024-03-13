@@ -28,7 +28,7 @@ export async function generateMetadata(
     title: `Xổ Số Đại Thành - Xổ Số ${tinh} - XS ${tinh} - KQXS ${tinh}`,
     description: `Cập Nhật KQXS ${tinh}, XS ${tinh}, XS ${tinh},  Xổ Số ${tinh} Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số ${tinh} Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam`,
     keywords:[
-      `xo so ${tinhEn}`,`xo so ${tinhEn_}`, `xoso ${tinhEn}`, `xoso${tinhEn}`, `xs${tinhEn}`, `kqxs ${tinhEn}`, `xo so ${tinhEn} hom nay`
+      `xo so ${tinh}`, `trực tiếp xổ số ${tinh}`, `trực tiếp xs ${tinhEn}`, `trực tiếp xổ số ${tinhEn_}`, `xổ số ${tinhEn_}`, `kết quả xổ số ${tinhEn_}`, `xo so ${tinhEn}`,`xo so ${tinhEn_}`, `xoso ${tinhEn}`, `xoso${tinhEn}`, `xs${tinhEn}`, `kqxs ${tinhEn}`, `xo so ${tinhEn} hom nay`
     ]
   };
 }

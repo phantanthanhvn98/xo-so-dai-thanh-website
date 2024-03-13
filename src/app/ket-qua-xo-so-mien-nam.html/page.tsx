@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Xổ Số Đại Thành - Xổ Số Miền Nam - XSMN - Xổ Số MN - KQXS MN",
   description: "Cập Nhật KQXS Miền Nam, XSMN, Xổ Số Miền Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
   keywords:[
-    'xo so mien nam','xosomiennam', 'xsmn', 'xs mien nam', 'xo so mn', 'kqxs mn', 'kqxsmn', 'xsmn hom nay', 'xs mn hom nay'
+    'trực tiếp xsmn', 'trực tiếp xổ số miền nam', 'xổ số miền nam', 'kết quả xổ số miền nam', 'xo so mien nam','xosomiennam', 'xsmn', 'xs mien nam', 'xo so mn', 'kqxs mn', 'kqxsmn', 'xsmn hom nay', 'xs mn hom nay'
   ]
 };
 

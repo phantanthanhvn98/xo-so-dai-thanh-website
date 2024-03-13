@@ -7,12 +7,12 @@ const XoSoMienNamTinh = (props) => {
     return (
         <div className='bg-[#fff]'>
             <div className='bg-[#f1bd2166]'>
-                <div className='flex items-center justify-center text-[20px] text-[#ec222c] font-[500]'>
+                <h1 className='flex items-center justify-center text-[20px] text-[#ec222c] font-[500]'>
                     { `KQXS ${ketqua.Tinh} ( KQXS MN)` }
-                </div>
-                <div className='flex items-center justify-center text[16px] text-[#0073ea] font-[300]'>
+                </h1>
+                <h2 className='flex items-center justify-center text[16px] text-[#0073ea] font-[300]'>
                     { `XS ${ketqua.Tinh} / Xổ Số ${ketqua.Tinh} Thứ 4 / XS ${ketqua.Vung} ${ketqua.Ngay.replaceAll("-", "/")}`} 
-                </div>
+                </h2>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
                 <div className='flex w-10 items-center justify-center text-[16px] text-[#000] font-[300] border-l-[1px] border-b-[#0000001a]'>

@@ -7,6 +7,7 @@ import DaiYesterDay from '../live/yesterday/component';
 import AboutUs from '../about/component';
 import Calendar from '@/components/calendar/calendar'
 import TinhMien from '../xosotinh/tinhmiennam';
+import LichQuayThuongCO from '../lichquaythuong/lichquaythuong';
 
 export default function Layout ({children, login}: any) {
     noStore()
@@ -25,6 +26,7 @@ export default function Layout ({children, login}: any) {
                 <div className="col-span-6 max-md:col-span-12 flex w-full flex-col gap-4">
                     <XoSoToDay date={new Date()}/>
                     {children}
+                    <LichQuayThuongCO /> 
                 </div>
                 <div className="col-span-3 max-md:hidden flex flex-col gap-4">
                     <div className=''>
