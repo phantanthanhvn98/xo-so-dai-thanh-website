@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className='flex justify-between bg-[#cae5ff66] p-8 max-[400px]:p-4 max-[500px]:flex-col max-[500px]:gap-4'>
             <div className='flex justify-center'>
-                <Image className='w-[103px] h-[60px]' src={logo} alt=""/>
+                <Image className='w-[103px] h-[60px]' src={logo} alt="Xổ số Đại Thành logo"/>
             </div>
             <div className='flex justify-between gap-10 '>
                 <div className='flex flex-col gap-3'>

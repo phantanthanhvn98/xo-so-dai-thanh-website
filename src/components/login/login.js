@@ -99,7 +99,7 @@ const Login = (props) => {
                         Đăng Nhập Xổ Số Đại Thành
                     </div>
                     <div className="flex items-center w-10 h-10 justify-center cursor-pointer rounded-full p-2 hover:bg-[#e6e6e6]" onClick={() => props.setOpen(false)}>
-                        <Image className="" src={closeIcon} alt=""/>
+                        <Image className="" src={closeIcon} alt="Xổ số Đại Thành XSMN XSMT XSMB"/>
                     </div>
                 </div>
                 <div className="flex flex-col gap-5">

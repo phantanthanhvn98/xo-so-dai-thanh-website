@@ -28,7 +28,7 @@ const Stream = async ({params}: any) => {
           <div className='flex flex-col gap-4 pl-4 pr-4'>
             <div className='flex items-center justify-between'>
                 <div className="flex gap-8 items-center">
-                    <Image src={logo} alt="" className='h-[90px] w-[150px] items-center'/>
+                    <Image src={logo} alt="Xổ số Đại Thành logo" className='h-[90px] w-[150px] items-center'/>
                     <div className="text-[70px] font-[700] text-[#ec222c]">
                         Xổ Số Đại Thành
                     </div>
