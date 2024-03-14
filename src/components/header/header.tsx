@@ -32,18 +32,18 @@ const headers = [
         name: "Vietlott",
         uri: "/ket-qua-xo-so-vietlott.html"
     },
-    {
-        name: "Phân Tích",
-        uri: "/phan-tich-ket-qua-xo-so.html"
-    },
-    {
-        name: "Dự Đoán",
-        uri: "/du-doan-ket-qua-xo-so.html"
-    },
-    {
-        name: "Tin Xổ Số",
-        uri: "/tin-xo-so.html"
-    },
+    // {
+    //     name: "Phân Tích",
+    //     uri: "/phan-tich-ket-qua-xo-so.html"
+    // },
+    // {
+    //     name: "Dự Đoán",
+    //     uri: "/du-doan-ket-qua-xo-so.html"
+    // },
+    // {
+    //     name: "Tin Xổ Số",
+    //     uri: "/tin-xo-so.html"
+    // },
 ]
 
 const Header = (props:any) => {

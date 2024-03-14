@@ -7,6 +7,7 @@ import "./globals.css";
 import { StoreProvider } from "@/components/login/store/StoreProvider";
 import logo from "@/assets/images/logo.png"
 import Script from "next/script";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -198,13 +199,14 @@ export default function RootLayout({
           href="https://xosodaithanh.vn/"
           key="canonical"
         />
+        <GoogleAnalytics gaId="G-LGCJTVS8DC" />
         <meta name="robots" content="all" />
         <meta name="google-adsense-account" content="ca-pub-9196083901151422"></meta>
         <body className={lexend.className}>
           {children}
           <ToastContainer theme="dark"/>
         </body>
-        <Script
+        {/* <Script
           id="script-ld-1"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script1) }}
@@ -233,7 +235,7 @@ export default function RootLayout({
           id="script-ld-6"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script6) }}
-        />
+        /> */}
       </html>
     </StoreProvider>
   );

@@ -267,6 +267,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.88
     },
+    //to be here
     {
       url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-ben-tre-71.html',
       lastModified: new Date(),
@@ -387,6 +388,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.88
     },
+    // to be here
     {
       url: 'https://xosodaithanh.vn/ket-qua-xo-so/ket-qua-xo-so-bac-lieu-94.html',
       lastModified: new Date(),
