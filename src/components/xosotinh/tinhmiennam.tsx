@@ -20,9 +20,10 @@ const TinhMien = (props: any) => {
                     dataRule.map((item: any, index: number) => {
                     return (
                         <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
-                        <div className="flex cursor-pointer items-center text-[15px] font-[700]" key={index}>
+                        <div className="flex cursor-pointer items-center text-[15px] font-[700] gap-2" key={index}>
+                            <div className="rounded w-[5px] h-[5px] bg-[#000]" />
                             {
-                                `>> Xổ số ${item.ten}`
+                                `Xổ số ${item.ten}`
                             }
                         </div>
                         </Link>

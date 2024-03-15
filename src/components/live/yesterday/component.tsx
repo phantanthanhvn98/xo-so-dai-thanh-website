@@ -16,27 +16,31 @@ const DaiYesterDay = (props: any) => {
             </div>
             <div className="flex gap-3 flex-col p-2">
                 <Link href={"/ket-qua-xo-so-mien-nam.html"} prefetch={false}>
-                    <div className="text-[15px] font-[700]">
-                        { `>> Xổ số miền Nam`}
+                    <div className="text-[15px] font-[700] flex items-center gap-2">
+                        <div className="rounded w-[5px] h-[5px] bg-[#000]" />
+                        { `Xổ số miền Nam`}
                     </div>
                 </Link>
                 <Link href={"/ket-qua-xo-so-mien-trung.html"} prefetch={false}>
-                    <div className="text-[15px] font-[700]">
-                        { `>> Xổ số miền Trung`}
+                    <div className="text-[15px] font-[700] flex items-center gap-2">
+                        <div className="rounded w-[5px] h-[5px] bg-[#000]" />
+                        { `Xổ số miền Trung`}
                     </div>
                 </Link>
                 <Link href={"/ket-qua-xo-so-mien-bac.html"} prefetch={false}> 
-                    <div className="text-[15px] font-[700]">
-                        {`>> Xổ số miền Bắc`}
+                    <div className="text-[15px] font-[700] flex items-center gap-2">
+                        <div className="rounded w-[5px] h-[5px] bg-[#000]" />
+                        {`Xổ số miền Bắc`}
                     </div>
                 </Link>
                 {
                     dataRule.nam.tinh.map((item: any, index: number) => {
                     return (
                         <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
-                        <div className="flex cursor-pointer items-center text-[15px] font-[700]" key={index}>
+                        <div className="flex cursor-pointer items-center text-[15px] font-[700] gap-2" key={index}>
+                            <div className="rounded w-[5px] h-[5px] bg-[#000]" />
                             {
-                                `>> Xổ số ${item.ten}`
+                                `Xổ số ${item.ten}`
                             }
                         </div>
                         </Link>
@@ -47,9 +51,10 @@ const DaiYesterDay = (props: any) => {
                     dataRule.trung.tinh.map((item: any, index: number) => {
                     return (
                         <Link href={`/ket-qua-xo-so/ket-qua-xo-so-${tinhToUrl(item)}.html`} key={index}>
-                        <div className="flex cursor-pointer items-center text-[15px] font-[700]" key={index}>
+                        <div className="flex cursor-pointer items-center text-[15px] font-[700] gap-2" key={index}>
+                            <div className="rounded w-[5px] h-[5px] bg-[#000]" />
                             {
-                                `>> Xổ số ${item.ten}`
+                                `Xổ số ${item.ten}`
                             }
                         </div>
                         </Link>
