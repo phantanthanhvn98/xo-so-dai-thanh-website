@@ -19,16 +19,7 @@ const XoSoMienBacPage = async () => {
   const data = (await contentService.getKetQuaMien("Miền Bắc", "latest", 3)).data
   return (
     <Layout>
-      {/* {
-        <div className='flex flex-col gap-4'>
-          {
-            Object.keys(data).map((item, index) => {
-              return <XoSoMienBac vung="Miền Bắc" code="MB" ketqua={data[item]} key={index}/>
-            })
-          }
-        </div>
-      } */}
-      <Component vung="Miền Bắc" code="MB" ketqua={data}/>
+      <Component dayOfWeek={0}  vung="Miền Bắc" code="MB" ketqua={data}/>
     </Layout>
   );
 };

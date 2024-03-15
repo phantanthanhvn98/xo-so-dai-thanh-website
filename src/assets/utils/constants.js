@@ -239,3 +239,13 @@ export const mienByTinh = {
         "uri": "da-lat"
     }
 }
+
+export const dayOfWeeksDate = {
+    cn: 0,
+    thu2: 1,
+    thu3: 2,
+    thu4: 3,
+    thu5: 4,
+    thu6: 5,
+    thu7: 6
+}

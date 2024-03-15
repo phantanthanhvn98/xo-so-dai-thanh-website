@@ -12,6 +12,13 @@ export class Content {
         )
     }
 
+    getKetQuaNgays(vung, ngays){
+        return this.api.call(
+            `ketquaxoso/api/${vung}/ngay?ngay=${ngays}`,
+        )
+    }
+
+
     getKetQuaMien(vung, date, page){
         return this.api.call(
             `ketquaxoso/${vung}/${date}?page=${page}`,

@@ -9,6 +9,8 @@ import logo from "@/assets/images/logo.png"
 import Script from "next/script";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
+import Favicon from "./favicon.ico"
+
 const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
     countryName: "Việt Nam",
 
   },
-  icons: "./favicon.ico",
+  icons: [{rel: 'icon', url: Favicon.src}],
   keywords: ["xosodaithanh", 'xsmn', 'xsmt', 'xsmb', 'xosomn', 'xosomientrung', 'xosomienbac', 'xosohomnay', 'xosotructiep', 'kqxs', 'ketquaxoso',
   "xổ số", "xo so", "kết quả xổ số", "ket qua xo so", "xổ số miền nam", "xo so mien nam", "xs mn", "xổ số miền bắc", "xổ số trực tiếp", "xo so truc tiep", "xổ số miền trung"]
 };
@@ -206,7 +208,7 @@ export default function RootLayout({
           {children}
           <ToastContainer theme="dark"/>
         </body>
-        {/* <Script
+        <Script
           id="script-ld-1"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script1) }}
@@ -235,7 +237,7 @@ export default function RootLayout({
           id="script-ld-6"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(script6) }}
-        /> */}
+        />
       </html>
     </StoreProvider>
   );

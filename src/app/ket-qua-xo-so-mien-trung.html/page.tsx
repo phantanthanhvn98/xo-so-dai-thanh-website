@@ -21,12 +21,7 @@ const XoSoMienTrungPage = async () => {
     <Layout>
       {
         <div className='flex flex-col gap-4'>
-          {/* {
-            Object.keys(data).map((item, index) => {
-              return <XoSoMien vung="Miền Trung" code="MT" ketqua={data[item]} key={index}/>
-            })
-          } */}
-          <Component ketqua={data} vung="Miền Trung" code="MT"/>
+          <Component dayOfWeek={0} ketqua={data} vung="Miền Trung" code="MT"/>
         </div>
       }
     </Layout>

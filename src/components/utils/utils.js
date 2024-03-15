@@ -121,3 +121,26 @@ export function getStatus(status){
             <div>✅</div>
     )
 }
+
+export function getPreviousWeekday(weekday, numOfWeeks) {
+  let result = '';
+  const today = new Date();
+    const dayOfWeek = today.getDay(); // Ngày trong tuần của ngày hiện tại (0 là Chủ Nhật, 1 là Thứ Hai, ..., 6 là Thứ Bảy)
+    const daysToAdd = (dayOfWeek - weekday + 7) % 7; // Số ngày cần thêm vào để đến ngày trong tuần mong muốn
+
+    for (let i = 0; i < numOfWeeks; i++) {
+        const targetDay = new Date(today);
+        targetDay.setDate(today.getDate() - daysToAdd - (i * 7));
+      result = `${result},${formatDateToDDMMYYYY(targetDay)}`;
+    }
+
+  return result;
+}
+
+
+export function convertToSlug(text) {
+  return text.toLowerCase().replaceAll(" ", "-")
+  .toLowerCase()
+  .normalize("NFD")
+  .replaceAll(/[\u0300-\u036f]/g, "")
+}

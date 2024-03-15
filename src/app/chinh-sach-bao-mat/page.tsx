@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://xosodaithanh.vn/'),
-    title: "Xổ Số Đại Thành - Chính Sách Bảo Mật - Kết Quả Xổ Aố",
+    title: "Xổ Số Đại Thành - Chính Sách Bảo Mật - Kết Quả Xổ Số",
     description: "Cập Nhật Lịch Quay Thưởng KQXS Miền Nam, XSMN, Xổ Số Miền Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
     keywords:[
       'xo so mien nam','xosomiennam', 'xsmn', 'xs mien nam', 'xo so mn', 'kqxs mn', 'kqxsmn', 'xsmn hom nay', 'xs mn hom nay',
@@ -18,13 +18,13 @@ const ChinhSach = () =>{
                 Chính Sách Bảo Mật Và Bảo Về Thông Tin Cá Nhân
             </h1>
             <div>
-                Chúng tôi cam kết luôn tôn trọng sự riêng tư của quý vị. Điều này đồng nghĩa với việc chúng tôi sẽ bảo vệ mọi thông tin cá nhân mà quý vị chia sẻ với chúng tôi. Trong tài liệu này, khái niệm 'thông tin cá nhân' bao gồm tên, địa chỉ, địa chỉ email, số điện thoại và bất kỳ thông tin cá nhân nào khác mà quý vị cung cấp, cũng như bất kỳ thông tin nào về quý vị mà chúng tôi thu thập theo luật định hiện hành. Chúng tôi hy vọng rằng tài liệu này sẽ giúp quý vị hiểu rõ những thông tin cá nhân mà chúng tôi có thể thu thập, cũng như cách chúng tôi sẽ sử dụng những thông tin này sau đó.",
+                Chúng tôi cam kết luôn tôn trọng sự riêng tư của quý vị. Điều này đồng nghĩa với việc chúng tôi sẽ bảo vệ mọi thông tin cá nhân mà quý vị chia sẻ với chúng tôi. Trong tài liệu này, khái niệm thông tin cá nhân bao gồm tên, địa chỉ, địa chỉ email, số điện thoại và bất kỳ thông tin cá nhân nào khác mà quý vị cung cấp, cũng như bất kỳ thông tin nào về quý vị mà chúng tôi thu thập theo luật định hiện hành. Chúng tôi hy vọng rằng tài liệu này sẽ giúp quý vị hiểu rõ những thông tin cá nhân mà chúng tôi có thể thu thập, cũng như cách chúng tôi sẽ sử dụng những thông tin này sau đó.,
             </div>
             <div>
                 Khi bạn truy cập và sử dụng trang web (bao gồm cả việc đăng ký dịch vụ trực tuyến), chúng tôi hiểu rằng bạn hoàn toàn đồng ý với những điều khoản của chính sách này.
             </div>
             <div className="">
-                <h2 className="text-[20px] font-[500] flex items-center ">
+                <h2 className="text-[20px] font-[500] flex items-center">
                     1. Độ An Toàn
                 </h2>
                 <div>
@@ -32,7 +32,7 @@ const ChinhSach = () =>{
                 </div>
             </div>
             <div className="">
-                <h2 className="text-[20px] font-[500] flex items-center ">
+                <h2 className="text-[20px] font-[500] flex items-center">
                     2. Khai Báo Khi Sử Dụng
                 </h2>
                 <div>
@@ -40,7 +40,7 @@ const ChinhSach = () =>{
                 </div>
             </div>
             <div className="flex flex-col gap-4">
-                <h2 className="text-[20px] font-[500] flex items-center ">
+                <h2 className="text-[20px] font-[500] flex items-center">
                     3. Thông Tin Cá Nhân
                 </h2>
                 <div>
@@ -53,7 +53,7 @@ const ChinhSach = () =>{
                 </div>
             </div>
             <div className="flex flex-col gap-4">
-                <h2 className="text-[20px] font-[500] flex items-center ">
+                <h2 className="text-[20px] font-[500] flex items-center">
                     4. Cung cấp cho đơn vị khác
                 </h2>
                 <div>
@@ -61,7 +61,7 @@ const ChinhSach = () =>{
                 </div>
             </div>
             <div className="flex flex-col gap-4">
-                <h2 className="text-[20px] font-[500] flex items-center ">
+                <h2 className="text-[20px] font-[500] flex items-center">
                     5. Các đường link liên kết ngoài
                 </h2>
                 <div>
@@ -69,18 +69,18 @@ const ChinhSach = () =>{
                 </div>
             </div>
             <div className="flex flex-col gap-4">
-                <h2 className="text-[20px] font-[500] flex items-center ">
+                <h2 className="text-[20px] font-[500] flex items-center">
                     6. Thông tin lưu trên trình duyệt
                 </h2>
                 <div>
-                    Có những lúc, để nâng cấp trang web hoặc cải thiện chất lượng dịch vụ cho bạn, thông tin có thể được lưu vào máy tính của bạn. Những thông tin này thường được biết đến dưới tên gọi "cookies," mà nhiều trang web đang sử dụng. "Cookies" là các đoạn thông tin được lưu trữ trong đĩa cứng hoặc trình duyệt trên máy tính của bạn, không phải trên trang web. Chúng giúp thu thập một số thông tin về máy tính của bạn, như địa chỉ IP, hệ điều hành, chế độ trình duyệt và địa chỉ của các trang web liên quan.
+                    Có những lúc, để nâng cấp trang web hoặc cải thiện chất lượng dịch vụ cho bạn, thông tin có thể được lưu vào máy tính của bạn. Những thông tin này thường được biết đến dưới tên gọi cookies, mà nhiều trang web đang sử dụng. Cookies là các đoạn thông tin được lưu trữ trong đĩa cứng hoặc trình duyệt trên máy tính của bạn, không phải trên trang web. Chúng giúp thu thập một số thông tin về máy tính của bạn, như địa chỉ IP, hệ điều hành, chế độ trình duyệt và địa chỉ của các trang web liên quan.
                 </div>
                 <div>
-                    Nếu bạn không muốn nhận "cookies" này hoặc muốn được thông báo khi chúng được đặt vào, bạn có thể cấu hình trình duyệt của mình để thực hiện điều này nếu nó hỗ trợ. Lưu ý rằng nếu bạn tắt chức năng nhận "cookies," có thể bạn sẽ không thể truy cập hoặc sử dụng một số tính năng trên trang web mà trước đó đã được xác định. Chúng tôi không có ý định hạn chế quyền sử dụng của bạn trong tình huống này; điều này chỉ là một giới hạn trong quá trình lập trình và phát triển trang web.
+                    Nếu bạn không muốn nhận cookies này hoặc muốn được thông báo khi chúng được đặt vào, bạn có thể cấu hình trình duyệt của mình để thực hiện điều này nếu nó hỗ trợ. Lưu ý rằng nếu bạn tắt chức năng nhận cookies, có thể bạn sẽ không thể truy cập hoặc sử dụng một số tính năng trên trang web mà trước đó đã được xác định. Chúng tôi không có ý định hạn chế quyền sử dụng của bạn trong tình huống này; điều này chỉ là một giới hạn trong quá trình lập trình và phát triển trang web.
                 </div>
             </div>
             <div className="flex flex-col gap-4">
-                <h2 className="text-[20px] font-[500] flex items-center ">
+                <h2 className="text-[20px] font-[500] flex items-center">
                     7. Việc Thay Đổi Quy Định
                 </h2>
                 <div>
