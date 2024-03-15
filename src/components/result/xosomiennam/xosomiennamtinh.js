@@ -1,9 +1,10 @@
 import React from 'react'
 
-import { parseLive } from '@/components/utils/utils' 
+import { parseLive, getDayOfWeekVN, parseDateFromDDMMYYYY } from '@/components/utils/utils' 
 
 const XoSoMienNamTinh = (props) => {
     const ketqua = props.ketqua
+    const date = getDayOfWeekVN(parseDateFromDDMMYYYY(ketqua.Ngay))
     return (
         <div className='bg-[#fff]'>
             <div className='bg-[#f1bd2166]'>
@@ -11,7 +12,7 @@ const XoSoMienNamTinh = (props) => {
                     { `KQXS ${ketqua.Tinh} ( KQXS MN)` }
                 </h1>
                 <h2 className='flex items-center justify-center text[16px] text-[#0073ea] font-[300]'>
-                    { `XS ${ketqua.Tinh} / Xổ Số ${ketqua.Tinh} Thứ 4 / XS ${ketqua.Vung} ${ketqua.Ngay.replaceAll("-", "/")}`} 
+                    { `XS ${ketqua.Tinh} / Xổ Số ${ketqua.Tinh} ${date} / XS ${ketqua.Vung} ${ketqua.Ngay.replaceAll("-", "/")}`} 
                 </h2>
             </div>
             <div className='flex justify-between border-solid border-b-[1px] border-b-[#0000001a]'>
