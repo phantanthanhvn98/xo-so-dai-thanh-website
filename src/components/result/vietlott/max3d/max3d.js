@@ -4,7 +4,7 @@ const Max3D = (props) => {
     const ketqua = props.ketqua
     return (
         <div className="bg-[#fff">
-            <div className='bg-[#f1bd2166]'>
+            <div className='bg-[#f1bd2166] shadow-[0px_0px_10px_0px_#d9d9d9]'>
                 <div className='flex items-center justify-center text-center text-[20px] max-[500px]:text[16px] text-[#ec222c] font-[500]'>
                     Xổ số Max 3D - Kết quả XS Max 3D Vietlott
                 </div>

@@ -96,7 +96,7 @@ const lichQuayThuong = [
 
 const LichQuayThuongCO = () => {
     return (
-        <div>
+        <div className="">
                         <h1 className="text-[24px] font-[500] flex items-center justify-center">
                 Lịch Quay Thưởng
             </h1>

@@ -5,7 +5,7 @@ const XoSoMienBac = (props) => {
     const ketqua = props.ketqua[0]
 
     return (
-        <div className='bg-[#fff]'>
+        <div className='bg-[#fff] shadow-[0px_0px_10px_0px_#d9d9d9]'>
             <div className='bg-[#f1bd2166]'>
                 <div className='flex items-center justify-center text-[20px] max-[400px]:text-[16px] text-[#ec222c] font-[500]'>
                     {`KQXS Miền Bắc -  KQXS ${ketqua.Tinh}`}

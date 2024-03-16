@@ -23,8 +23,8 @@ const LiveAnnouncement = () => {
     endMienBac.setHours(18, 30, 0)
 
     return (
-        <div className="flex flex-col w-full gap-3 bg-[#fff] rounded-[8px]">
-            <div className="flex items-center justify-center rounded-t-[8px] text-[13px] font-[700] text-center bg-[#ec222c] text-[#fff] p-2">
+        <div className="flex flex-col w-full gap-2 bg-[#fff] rounded-[8px] p-2 shadow-[0px_0px_10px_0px_#d9d9d9]">
+            <div className="flex items-center justify-center rounded-t-[8px] text-[16px] font-[500] text-center bg-[#ec222c] text-[#fff] p-2">
                 Tường Thuật Trực Tiếp Xổ Số
             </div>
             <div className="flex flex-col gap-2 font-[700] text-[13px] p-2">
@@ -68,35 +68,17 @@ const LiveAnnouncement = () => {
                     </div>
                 </Link>
             </div>
-            <div className="flex justify-between pl-2 pr-2">
+            <div className="flex justify-between p-2">
                 <div className="flex items-center text-[13px] font-[500]">
                     Trực Tiếp Trên Youtube
                 </div>
-                <Link href={'https://www.youtube.com/@xosodaithanh'} target="_blank"  rel="noopener noreferrer" >
-                    <div className="flex items-center justify-center p-[6px] bg-[#ec222c] text-[#fff] text-[12px] rounded-[30px]">
+                <Link href={'https://www.youtube.com/@xosodaithanh'} target="_blank"  rel="noopener noreferrer" className="flex rounded-[30px] gap-2 p-2 bg-[#ec222c] ">
+                    <Image src={triangle} alt="xem nay truc tiep xo so tren youtube"/>
+                    <div className="flex items-center justify-center text-[#fff] text-[12px]">
                         Xem Ngay
                     </div>
                 </Link>
             </div>
-            {/* <div className="flex justify-between font-[300] text-[12px] p-2">
-                <div className="flex gap-1 items-center">
-                    Chờ
-                    <div>
-                        { getStatus(0)}
-                    </div>
-                </div>
-                <div className="flex gap-1 items-center">
-                    Đang xổ                    <div>
-                        { getStatus(1)}
-                    </div>
-                </div>
-                <div className="flex gap-1 items-center">
-                    Mới
-                    <div>
-                        { getStatus(2)}
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 }

@@ -6,7 +6,7 @@ import {getDayOfWeekVN, parseDateFromDDMMYYYY, parseLive, tinhToUrl} from '@/com
 const XoSoMien = (props) => {
     const ketqua = props.ketqua
     return (
-        <div className="bg-[#fff] w-full">
+        <div className="bg-[#fff] w-full shadow-[0px_0px_10px_0px_#d9d9d9]">
             <div className='bg-[#f1bd2166]'>
                 <h1 className='flex items-center justify-center text-[20px] max-md:text-[16px] text-[#ec222c] font-[500]'>
                     {`KQXS ${props.vung} ( KQXS ${props.code})`}
