@@ -15,7 +15,7 @@ const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
-  title: "Xổ Số Đại Thành - Kết Quả Xổ Số Nam Trung Bắc nhanh và chính xác",
+  title: "Kết Quả Xổ Số Nam Trung Bắc nhanh và chính xác",
   description: "Xổ Số Đại Thành, Cập Nhật KQXS 3 Miền Bắc, Trung, Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
   authors: [{
     url: 'https://xosodaithanh.vn',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     }
   ],
   openGraph: {
-    title: "Xổ Số Đại Thành - Kết Quả Xổ Số 3 Miến - Kết quả Xổ Số Miền Bắc - Kết quả Xổ Số Miền Trung - Kết quả Xổ Số Miền Nam - Kết Quả Xổ Số Hôm Nay",
+    title: "Kết Quả Xổ Số 3 Miến - Kết quả Xổ Số Miền Bắc - Kết quả Xổ Số Miền Trung - Kết quả Xổ Số Miền Nam - Kết Quả Xổ Số Hôm Nay",
     description: "Xổ Số Đại Thành, Cập Nhật KQXS 3 Miền Bắc, Trung, Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
     type: 'website',
     images: [logo.src],

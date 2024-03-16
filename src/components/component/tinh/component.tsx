@@ -39,7 +39,7 @@ const ComponentTinh = (props: any) => {
   }
   
     return (
-        <div>
+      <div>
         {
             ["Miền Nam", "Miền Trung"].includes(vung) ?
             <div className="flex flex-col gap-4">
@@ -58,7 +58,7 @@ const ComponentTinh = (props: any) => {
         })
         :<></>
         }
-        </div>
+    </div>
     )
 }
 

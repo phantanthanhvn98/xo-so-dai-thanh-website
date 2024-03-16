@@ -7,7 +7,7 @@ import { getPreviousWeekday } from '@/components/utils/utils';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
-  title: "Xổ Số Đại Thành - Xổ Số Miền Bắc Thứ 3 - XSMB Thứ 3 - Xổ Số MB Thứ 3 - KQXS MB Thứ 3",
+  title: "Xổ Số Miền Bắc Thứ 3 - XSMB Thứ 3 - Xổ Số MB Thứ 3 - KQXS MB Thứ 3",
   description: "Cập Nhật KQXS Miền Bắc, XSMB, Xổ Số Miền Bắc Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Bắc",
   keywords:[
     'trực tiếp xsmb thu 3', 'trực tiếp xổ số miền Bắc thu 3', 'xổ số miền bắc thu 3', 'kết quả xổ số miền bắc thu 3', 'xo so mien Bắc thu 3','xosomienbac thu 3', 'xsmb thu 3', 'xs mien bac thu 3', 'xo so mb thu 3', 'kqxs mb thu 3', 'kqxsmb thu 3', 'xsmb hom nay thu 3', 'xs mb hom nay thu 3'

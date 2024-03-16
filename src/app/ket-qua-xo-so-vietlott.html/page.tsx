@@ -10,7 +10,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
-  title: "Xổ Số Đại Thành - Kết Quả Xổ Số Vietlott - Kết quả Xổ Số Mega 6/45 - Kết quả Xổ Số Power 6/55 - Kết quả Xổ Số Mã 3D - Kết Quả Xổ Số Hôm Nay",
+  title: "Kết Quả Xổ Số Vietlott - Kết quả Xổ Số Mega 6/45 - Kết quả Xổ Số Power 6/55 - Kết quả Xổ Số Mã 3D - Kết Quả Xổ Số Hôm Nay",
   description: "Xổ Số Đại Thành, Cập Nhật KQXS Điện Toán Vietlott, XS Mega 6/45, XS Power 6/55, XS Max 3D Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
 };
 

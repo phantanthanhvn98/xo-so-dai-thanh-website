@@ -25,7 +25,7 @@ export default function Layout ({children, login}: any) {
                 </div>
                 <div className="col-span-6 max-md:col-span-12 flex w-full flex-col gap-4">
                     <XoSoToDay date={new Date()}/>
-                    {children}
+                      {children}
                     <LichQuayThuongCO /> 
                 </div>
                 <div className="col-span-3 max-md:hidden flex flex-col gap-4">

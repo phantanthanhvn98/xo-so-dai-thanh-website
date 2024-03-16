@@ -7,7 +7,7 @@ import { getPreviousWeekday } from '@/components/utils/utils';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
-  title: "Xổ Số Đại Thành - Xổ Số Miền Nam Thứ 2 - XSMN Thứ 2 - Xổ Số MN Thứ 2 - KQXS MN Thứ 2",
+  title: "Xổ Số Miền Nam Thứ 2 - XSMN Thứ 2 - Xổ Số MN Thứ 2 - KQXS MN Thứ 2",
   description: "Cập Nhật KQXS Miền Nam, XSMN, Xổ Số Miền Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
   keywords:[
     'trực tiếp xsmn thu 2', 'trực tiếp xổ số miền nam thu 2', 'xổ số miền nam thu 2', 'kết quả xổ số miền nam thu 2', 'xo so mien nam thu 2','xosomiennam thu 2', 'xsmn thu 2', 'xs mien nam thu 2', 'xo so mn thu 2', 'kqxs mn thu 2', 'kqxsmn thu 2', 'xsmn hom nay thu 2', 'xs mn hom nay thu 2'

@@ -7,7 +7,7 @@ import { getPreviousWeekday } from '@/components/utils/utils';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xosodaithanh.vn/'),
-  title: "Xổ Số Đại Thành - Xổ Số Miền Trung Thứ 7 - XSMT Thứ 7 - Xổ Số MN Thứ 7 - KQXS MN Thứ 7",
+  title: "Xổ Số Miền Trung Thứ 7 - XSMT Thứ 7 - Xổ Số MN Thứ 7 - KQXS MN Thứ 7",
   description: "Cập Nhật KQXS Miền Trung, XSMT, Xổ Số Miền Trung Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Trung",
   keywords:[
     'trực tiếp XSMT thu 7', 'trực tiếp xổ số miền Trung thu 7', 'xổ số miền Trung thu 7', 'kết quả xổ số miền Trung thu 7', 'xo so mien Trung thu 7','xosomienTrung thu 7', 'XSMT thu 7', 'xs mien Trung thu 7', 'xo so mn thu 7', 'kqxs mn thu 7', 'kqXSMT thu 7', 'XSMT hom nay thu 7', 'xs mn hom nay thu 7'

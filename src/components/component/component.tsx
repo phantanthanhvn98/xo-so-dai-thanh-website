@@ -84,12 +84,12 @@ const Component = (props: any) => {
     
     return (
         <div className='flex flex-col gap-4'>
-            <div className="flex w-full justify-between items-center bg-[#fff]">
+            <div className="flex w-full opacity-0 justify-between items-center bg-[#fff]">
                 { 
                     daysOfWeek.map((item: any, index: number) => {
                         return (
                             <Link href={item.uri} prefetch={false} key={index}>
-                                <div className={`flex min-w-[1200px]:p-2 justify-center text-center max-[1200px]:text-[14px] ${index === tab ? 'bg-[#ec222c] text-[#fff]' : 'text-[#000]'}`} onClick={() => setTab(index)}>
+                                <div className={`flex min-[1200px]:p-2 justify-center text-center max-[1200px]:text-[14px] ${index === tab ? 'bg-[#ec222c] text-[#fff]' : 'text-[#000]'}`} onClick={() => setTab(index)}>
                                     {item.dayOfWeek}
                                 </div>
                             </Link>

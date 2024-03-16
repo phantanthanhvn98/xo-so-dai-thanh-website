@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://xosodaithanh.vn/'),
-    title: "Xổ Số Đại Thành - Chính Sách Bảo Mật - Kết Quả Xổ Số",
+    title: "Chính Sách Bảo Mật - Kết Quả Xổ Số",
     description: "Cập Nhật Lịch Quay Thưởng KQXS Miền Nam, XSMN, Xổ Số Miền Nam Nhanh Chính Xác Và Miễn Phí, Tường thuật Kết Quả Xổ Số Hôm Nay Trực Tiếp Tại Trường Quay, Xổ Số Kiến Thiết Việt Nam",
     keywords:[
       'xo so mien nam','xosomiennam', 'xsmn', 'xs mien nam', 'xo so mn', 'kqxs mn', 'kqxsmn', 'xsmn hom nay', 'xs mn hom nay',
