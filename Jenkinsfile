@@ -7,8 +7,7 @@ pipeline {
                 echo 'Hello World'
             }
         }
-    }
-    stage('Build') {
+        stage('Build') {
             agent {
                 docker {
                     image 'test:123'
@@ -19,4 +18,5 @@ pipeline {
                 sh 'ls'
             }
         }
+    }
 }
