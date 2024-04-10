@@ -8,4 +8,15 @@ pipeline {
             }
         }
     }
+    stage('Build') {
+            agent {
+                docker {
+                    image 'test:123'
+                    reuseNode true
+                }
+            }
+            steps {
+                sh 'ls'
+            }
+        }
 }
