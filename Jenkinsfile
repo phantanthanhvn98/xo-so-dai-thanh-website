@@ -3,9 +3,10 @@ pipeline {
     stages{
         stage('Build') {
             steps {
-                script {
-                    docker.build("example:master")
-                }
+                // script {
+                //     docker.build("example:master")
+                // }
+                sh 'find / -name docker'
             }
         }
         stage('Build Docker Image') {
