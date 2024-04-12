@@ -1,22 +1,14 @@
 pipeline {
-    agent any
+    agent kubernetes
 
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Build') {
-            // agent {
-            //     docker {
-            //         image 'test:123'
-            //         reuseNode true
-            //     }
-            // }
+        stage('Pull Code') {
             steps {
                 sh 'ls'
             }
+        }
+        stage('Deploy') {
+            
         }
     }
 }
