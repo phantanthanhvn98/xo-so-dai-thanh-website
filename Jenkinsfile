@@ -13,8 +13,11 @@ pipeline {
         stage('Build Docker Image') {
             agent {
                 kubernetes {
-                    label 'your-kubernetes-label'
+                    label 'example-master'
                 }
+            }
+            steps {
+                echo "health check"
             }
         }
     }
