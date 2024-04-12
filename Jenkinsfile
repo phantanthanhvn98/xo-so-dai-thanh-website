@@ -1,9 +1,11 @@
 pipeline {
     agent any
     stages{
-        steps {
-            script {
-                docker.build("example:master")
+        stage('Build') {
+            steps {
+                script {
+                    docker.build("example:master")
+                }
             }
         }
     }
