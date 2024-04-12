@@ -1,16 +1,19 @@
 pipeline {
- agent {
-      kubernetes {
-          label 'your-kubernetes-label'
-      }
-  }
-  stages {
-      stage('Build Docker Image') {
-          steps {
-              script {
-                  docker.build("example:master")
-              }
-          }
-      }
-  }
+    agent any
+    stages{
+        steps {
+            script {
+                docker.build("example:master")
+            }
+        }
+    }
+    stages {
+        stage('Build Docker Image') {
+            agent {
+                kubernetes {
+                    label 'your-kubernetes-label'
+                }
+            }
+        }
+    }
 }
