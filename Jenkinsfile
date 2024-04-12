@@ -8,8 +8,6 @@ pipeline {
                 }
             }
         }
-    }
-    stages {
         stage('Build Docker Image') {
             agent {
                 kubernetes {
